@@ -23,7 +23,8 @@ Graft employs payment processing protocols and flows similar to traditional elec
 # Background <a name="Background"></a>
 Bitcoin[1] was created as an “online cash” - very secure but relatively slow settlement system which was unable to replace payment cards online or compete with both plastic cards and paper cash in brick-and-mortar stores (Figure 1).
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://github.com/graft-project/graft-white-paper/blob/master/graft-white-paper-1.01/images/Figure%201.png "Bitcoin Transaction Processing without Centralized Intermediary")
+`Figure 1:` Bitcoin Transaction Processing without Centralized Intermediary
 
 
 
