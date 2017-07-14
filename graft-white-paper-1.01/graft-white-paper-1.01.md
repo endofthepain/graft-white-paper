@@ -33,7 +33,7 @@ Bitcoin[1] was created as an “online cash” - very secure but relatively slow
 ![alt text](https://github.com/graft-project/graft-white-paper/blob/master/graft-white-paper-1.01/images/Figure%201.png "Bitcoin Transaction Processing without Centralized Intermediary")
 **Figure 1:** Bitcoin Transaction Processing without Centralized Intermediary
 
-![alt text](images/Figure%201.png "Bitcoin Transaction Processing without Centralized Intermediary")
+![alt text](.images/Figure%201.png "Bitcoin Transaction Processing without Centralized Intermediary")
 
 Even though some existing cryptocurrencies2 have improved confirmation times, they are still unable to process essential transactions types such as authorization and completion, which makes their adoption by retail, hospitality, and convenience store industries impossible without using intermediaries - payment processors and gateways3 - who fill the gap (Figure 2). However, the very existence of payment processor, which is typically a centralized commercial organization regulated by government and controlled by shareholders, as an element of crypto payment transaction contradicts the fundamental principles of cryptocurrencies: decentralization, privacy, and independence. 
 
