@@ -118,6 +118,10 @@ Graft reintroduces convenient fee structure with no fees for the payer so all fe
  
 **Table 1:** Graft Network Transaction Fees
 
+Micropayments (less than 10 GRF) | Regular Payments (more than 10 GRF)
+--- | ---
+0.1%  | 1% of log10 (significantly less than 0.1% as transaction amount grows)               
+     
 
 
 
