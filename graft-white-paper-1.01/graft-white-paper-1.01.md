@@ -10,11 +10,9 @@ Version 1.01
 
 
 # Table of Contents
-[Abstract](#Abstract)
-
-[Background](#Background1)
-
-  [The Value of Decentralized Payment Processing](#TheValue)
+### [Abstract](#Abstract)
+### [Background](#Background1)
+#### [The Value of Decentralized Payment Processing](#TheValue)
 
 # Abstract <a name="Abstract"></a>
 Graft is a global, open-sourced, blockchain-based, decentralized payment gateway and processing platform that anyone can use.
