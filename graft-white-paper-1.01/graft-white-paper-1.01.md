@@ -222,3 +222,44 @@ If buyer decides to pay with alternative cryptocurrency or credit/debit card, Gr
 
 The supernode owner can provide currency exchange or/and credit/debit card payment as an additional service in a form of service broker. The service broker is responsible for maintaining security and necessary compliance with exchange and payment card processing regulations, including PCI DSS compliance, anti-money laundering regulations, etc. 
 
+## Service Brokers
+If customer pays in graftcoin, and merchant wants to get paid in graftcoins, the funds will be automatically and instantly debited from buyer account and deposited to merchant account by Graft network. However, if the customer wants to pay using different payment method, or/and the merchant wants to be paid in different currency, the Graft network will have to use special mechanism. 
+
+In order to facilitate elements of payment processing that cannot be decentralized but still highly demanded by consumers and merchants, Graft introduce a concept of service broker. Whenever the Graft network itself cannot process particular operation in fully decentralized way, it will delegate such an operation to the network of service brokers which can compete by offering to merchants and customers better services and lower fees. Merchants can choose a single (for example, highly trusted or least expensive) service broker, or a group of brokers. This way both buyer and merchant will received all the services they need while still keeping some grade of decentralization.  
+
+Supernodes facilitate the hosting of service Brokers. In fact, the supernode owners may become a service Broker. While supernodes must implement both mining and real-time authorization functions, they don't have to implement any Broker functions by default. 
+
+In addition to adding implementation modules to supernodes, Service Brokers may modify the client app source code, or even create their own applications following Graft protocol. These are the types of service brokers: 
+
+* Accept Broker
+* Payoff Broker
+* Top Up Broker
+* Margin Broker
+* Escrow Broker
+* Identify Verification Broker
+
+**Accept Broker** enables accepting payment methods different from native graftcoins and immediately convert the payment amount into graftcoins and deposits them into merchant account. Accept Broker acts in real time and becomes a part of transaction between buyer and merchant. Examples of accept broker:
+
+* Bitcoin accept broker
+* Ether accept broker
+* Credit Card accept broker
+* Apple Pay accept broker
+
+**Payout Broker** enables withdrawal from Graft merchant account in bitcoins, altcoins, or local fiat currency. Payoff can be initiated manually or automatically. Examples of payout broker:
+
+* Bank transfer payout broker 
+* PayPal payout broker 
+* Bitcoin payout broker 
+
+**Top Up Broker** enables wallet top up (exchanging bitcoin, altcoins or local fiat currency to graftcoins). Examples:
+
+* Credit card top up Broker 
+* Bitcoin top up Broker
+* ACH top up Broker
+
+**Margin Broker** provides a temporary balance to merchant for paying processing fees for transactions that do not have financial inputs such as gift certificate redemption. The margin balance is returned automatically as soon as merchant receives proceeds from next financial transaction. 
+
+## Merchant Payouts
+Merchant can decide to receive their proceeds from transactions in other cryptocurrency such as Bitcoin or local fiat currency. In this case, the output of the transaction will be processed by service broker, as part of the same transaction, or later, depending on merchant settings. This ensures that the sale will pay the merchant the exact local currency price less applicable fees. The supernode quorum automatically selects the best offer from all service brokers based on combination of the merchant selections, better exchange rate, and higher reputation score.
+
+There are several payout options: graftcoins, original cryptocurrency,  other cryptocurrency, or local fiat currency (Table 3). For each of these options, there are payout broker services available on Graft. When the merchant selects the methods of payment they want to accept and the payout method, the Graft Point of Sale application will prompt with all available broker services options - depending on merchant identity and location attributes - so the merchant can sign up for all desirable broker services. If more than one payout broker service available for the same type of exchange and selected by merchant, the Graft Point of Sale app will automatically select the best offer during the transaction execution. 
