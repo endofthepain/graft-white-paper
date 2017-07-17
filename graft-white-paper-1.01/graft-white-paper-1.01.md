@@ -8,12 +8,12 @@ Slava Gomzin, Dan Itkis
 Version 1.01
 
 
-### Table of Contents
-#### Abstract
-#### Background
+## Table of Contents
+### Abstract
+### Background
 The Value of Decentralized Payment Processing
-#### Terminology
-#### Transaction Fees
+### Terminology
+### Transaction Fees
 To Fee or Not to Fee
 
 Graft Transaction Fees
