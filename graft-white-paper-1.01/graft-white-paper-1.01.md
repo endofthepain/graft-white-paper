@@ -33,7 +33,7 @@ Bitcoin[1] was created as an “online cash” - very secure but relatively slow
 ![Bitcoin Transaction Processing without Centralized Intermediary](https://github.com/graft-project/graft-white-paper/blob/master/graft-white-paper-1.01/images/Figure%201.png "Bitcoin Transaction Processing without Centralized Intermediary")
 **Figure 1:** Bitcoin Transaction Processing without Centralized Intermediary
 
-Even though some existing cryptocurrencies2 have improved confirmation times, they are still unable to process essential transactions types such as authorization and completion, which makes their adoption by retail, hospitality, and convenience store industries impossible without using intermediaries - payment processors and gateways3 - who fill the gap (Figure 2). However, the very existence of payment processor, which is typically a centralized commercial organization regulated by government and controlled by shareholders, as an element of crypto payment transaction contradicts the fundamental principles of cryptocurrencies: decentralization, privacy, and independence. 
+Even though some existing cryptocurrencies[2] have improved confirmation times, they are still unable to process essential transactions types such as authorization and completion, which makes their adoption by retail, hospitality, and convenience store industries impossible without using intermediaries - payment processors and gateways[3] - who fill the gap (Figure 2). However, the very existence of payment processor, which is typically a centralized commercial organization regulated by government and controlled by shareholders, as an element of crypto payment transaction contradicts the fundamental principles of cryptocurrencies: decentralization, privacy, and independence. 
 
 ![alt text](https://github.com/graft-project/graft-white-paper/blob/master/graft-white-paper-1.01/images/Figure%202.png "Processing Bitcoin Transaction by Centralized Intermediary")
 **Figure 2:** Processing Bitcoin Transaction by Centralized Intermediary
@@ -71,13 +71,13 @@ Since Graft is both decentralized payment processor and cryptocurrency, it is ab
 ### Graft 
 1. **G**lobal **R**eal-time **A**uthorizations and **F**und **T**ransfers - decentralized global open platform for processing  real-time authorizations and settlements of merchant payments and fund transfers using untraceable blockchain, decentralized API, and open community of service brokers that support variety of payment and payout methods including cryptocurrencies and traditional credit cards and bank transfers. 
 
-2. A plant that has a twig or bud from another plant attached to it so they are joined and grow together.4 Grafting is an advanced technique that botanists, farmers, gardeners, and hobbyists use to add living tissue from one plant to another. Why would anyone go to all this trouble of attaching two bits of plants together? Well, it turns out that this technique has a lot of benefits. Growers can choose different parts of plants that have particular attributes, and attach them to other plants. Let's say a certain tree has really strong roots, but its fruit isn't so great. This tree would make great rootstock, or a plant selected for its roots. It can be combined with another tree that doesn't have good roots, but produces wonderful fruit. Plants that are selected for their stems, flowers, or fruit are called the scion. A desirable scion can be grafted onto a strong rootstock to create a truly great tree. This is pretty common practice in the gardening industry. It allows for plants to grow in many new areas, and gives us access to more products.5
+2. A plant that has a twig or bud from another plant attached to it so they are joined and grow together.[4] Grafting is an advanced technique that botanists, farmers, gardeners, and hobbyists use to add living tissue from one plant to another. Why would anyone go to all this trouble of attaching two bits of plants together? Well, it turns out that this technique has a lot of benefits. Growers can choose different parts of plants that have particular attributes, and attach them to other plants. Let's say a certain tree has really strong roots, but its fruit isn't so great. This tree would make great rootstock, or a plant selected for its roots. It can be combined with another tree that doesn't have good roots, but produces wonderful fruit. Plants that are selected for their stems, flowers, or fruit are called the scion. A desirable scion can be grafted onto a strong rootstock to create a truly great tree. This is pretty common practice in the gardening industry. It allows for plants to grow in many new areas, and gives us access to more products.[5]
 
 ### Supernode
 Independant always-on server running implementation of Graft Blockchain node and Graft DAPI, and maintaining the blockchain via block mining, processing of real-time authorization and settlement DAPI calls between buyers and merchants, and hosting additional services such as instant cryptocurrency exchange, credit/debit card acceptance, and merchant payouts in local currency.    
 
 ### Service Broker
-Graft protocol extension hosted on supernode or a group of supernodes and owned by the supernode operator. Service Brokers implement special additional features that cannot be automatically executed by fully decentralized network or/and requires special regulation framework such as PCI DSS6 or NIST 800-63-3.7 Examples of service brokers are credit card payment acceptance broker and bank payout transfer broker.   
+Graft protocol extension hosted on supernode or a group of supernodes and owned by the supernode operator. Service Brokers implement special additional features that cannot be automatically executed by fully decentralized network or/and requires special regulation framework such as PCI DSS[6] or NIST 800-63-3.[7] Examples of service brokers are credit card payment acceptance broker and bank payout transfer broker.   
 
 ### Domain
 Virtual decentralized independant “merchant account” where merchants can set up authorization and payout rules and triggers that will have an affect on transactions for that specific merchant.
@@ -103,18 +103,18 @@ Multiple powerful nodes (servers) distributed throughout the world are required 
 
 The mining has another purpose: constant and steady injection of new coins into the system to keep up the liquidity with the growing demand for extra coins as the acceptance widens and usage increases. As the system get traction, the node operators will receive more revenue from transaction fees, so the bonus for mining can be gradually reduced with each new block to limit the overall supply.
 
-In ideal world, the cryptocurrency should be available for everyone and free of charge. In fact, there are networks that promise free transactions.8 In other networks, including Bitcoin, the fees are used to prioritize transactions and “resolve” the scalability problem.
+In ideal world, the cryptocurrency should be available for everyone and free of charge. In fact, there are networks that promise free transactions.[8] In other networks, including Bitcoin, the fees are used to prioritize transactions and “resolve” the scalability problem.
 
 In Graft network, however, the fee is used for two reasons. First, to avoid network abuse and associated performance and blockchain size issues. For example, using the real network for testing. If transaction is completely free, one can move the same amount between two accounts indefinitely. Second, to become the only incentive for node operators after the mining bonus becomes too small. 
 
 ### Charging the Wrong Guy
-The problem with Bitcoin and other cryptocurrencies’ fee is that they charge the wrong side of the transaction. It’s even worse than traditional card payments because unlike plastic payments, both buyer and merchant pay fees for cryptocurrency transaction: the buyer pays to the cryptocurrency network, while the merchant pays to the payment processor.9 The (average/layman) payer is often confused by the process which looks more like a betting, without clear explanation of the fee schedule, which obviously does not make cryptocurrency payments very attractive. 
+The problem with Bitcoin and other cryptocurrencies’ fee is that they charge the wrong side of the transaction. It’s even worse than traditional card payments because unlike plastic payments, both buyer and merchant pay fees for cryptocurrency transaction: the buyer pays to the cryptocurrency network, while the merchant pays to the payment processor.[9] The (average/layman) payer is often confused by the process which looks more like a betting, without clear explanation of the fee schedule, which obviously does not make cryptocurrency payments very attractive. 
 
 ### Micropayments: How Do I Pay with Crypto for a Cup of Coffee? 
 Another problem currently experienced by Bitcoin is its inability to handle micropayments due to high transaction fees.10 Graft resolves this problem by introducing a unique (in cryptocurrencies world) approach to transaction fees.
 
 ## Graft Transaction Fees <a name="GraftTransactionFees"></a>
-Graft reintroduces convenient fee structure with no fees for the payer so all fees are paid by the receiver (merchant), just like everyone used to do with traditional electronic methods of payment. Graft makes micropayments accessible to everyone by setting very low (comparing to credit cards11 and online payment processors,12 and other cryptocurrencies13) fees, but without fixed fee component (Table 1). All fees are paid by the payees.  
+Graft reintroduces convenient fee structure with no fees for the payer so all fees are paid by the receiver (merchant), just like everyone used to do with traditional electronic methods of payment. Graft makes micropayments accessible to everyone by setting very low (comparing to credit cards11 and online payment processors,[12] and other cryptocurrencies[13]) fees, but without fixed fee component (Table 1). All fees are paid by the payees.  
  
 **Table 1:** Graft Network Transaction Fees
 
@@ -136,5 +136,19 @@ Transaction amount | Transaction Fee Amount | Effective Transaction Fee
 1,000 GRF | 0.03 GRF | 0.003%
 1,000,000 GRF | 0.06 GRF | 0.000006%
 
+### Additional Third Party Service Broker Fees
+When accepting different payment methods such as bitcoins, altcoins, credit/debit cards, or processing merchant payouts in different currencies such as bitcoins, altcoins, or local fiat currency, additional payment broker and/or payout broker fees may be applied. These are not hidden fees as they are published by the brokers at the time of merchant sign-in for the broker service. Those fees are always charged to the merchant at the time of transaction settlement (payout), i.e. there are no any setup, upfront, or periodic fees.
+
+### Customer Fees
+Some cryptocurrencies such as Bitcoin require customer to add transaction fee in order to get fast confirmation. Such fees are configured by customer wallet application and paid by customer. Most Bitcoin users are already accustomed to such fees. 
+
+### Paying Fees Using Margin Balances
+In some cases, transactions fees can be charged using special “margin” balances provided by Graft network itself or/and margin brokers. Examples of such transactions are Issue and Redeem transactions related to gift certificates, loyalty rewards, and store credit processing. This is done in order to allow merchant transaction processing even if the merchant does not have enough balance on Graft account yet. 
+ 
+# Transaction Processing 
+The world’s moving towards “thin” devices. People around the world use more smartphones and tablets and less workstations and laptops. Therefore, decentralized crypto payment system cannot rely solely on small individual nodes hosted on personal computers but rather should be based on dedicated powerful supernodes hosted by professionals, with thin clients apps connected to a quorum - a group of supernodes randomly selected by special fraud-prevention algorithm - via DAPI calls.
+
+## Confirmation Time: Introducing Real Time Authorizations
+Long confirmation time[14] (from several minutes to several hours, depending on transaction fee[15]) is one of the main reasons for low adoption of cryptocurrencies in retail and hospitality sectors where customers cannot wait and so merchants must process payment instantly. Unlike some other cryptocurrency networks that tried to resolve this problem by introducing special add-on systems or transaction types16, Graft processes all its transactions in real time (less than 3 seconds), without charging an extra fee or compromising the principle of decentralization (see Figure 3). 
 
 
