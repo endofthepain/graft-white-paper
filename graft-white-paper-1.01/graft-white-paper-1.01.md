@@ -159,3 +159,66 @@ This is achieved through using a consensus of always-on trusted supernodes with 
 ### Supernodes
 All transactions are processed by the network of always-on Graft network nodes -- supernodes -- in real time (less than 3 seconds). All the fees are paid by the receiver (merchant) to the supernodes participating in quorum and (optional) service brokers participating in transaction processing. Supernodes are responsible for both blockchain maintenance (mining blocks) and transaction processing. The owners of the nodes are financially responsible for transactions they process. Such responsibility is achieved by financial interest: mining fees, transaction fees, and collateral paid to escrow service brokers. In case of problem caused by the supernode, the funds from collateral will be available for compensation.
 
+### DAPI
+Unlike regular API, which is hosted at server or server farm, DAPI does not have a single address as it is running on thousands supernodes. Any single node can serve the DAPI call anytime. The DAPI calls are stateless which means that the supernodes do not maintain any permanent session with the client, and all the data necessary for processing is instantly distributed and available on all the nodes. The client app which consumes DAPI maintains a list of supernodes it communicates with, which is a relatively small group of randomly selected addresses. However, the client app is free to select particular supernode and “stick” with it.  For example, merchants can decide to host its own supernode which they trust most.
+
+### Scalability
+Scalability of payment network is the ability to process a large number of transactions simultaneously without degradation of performance. Scalability of the payment network is usually measured in tps (transactions per second). For example, Visa claims its authorization network is capable to process 56,000 tps,[17] while Bitcoin network is restricted to a sustained rate of only 7 tps.[18]
+
+Some of the measures that can be used to ensure higher scalability are decreasing the block creation interval to 2 minutes and removing the size limit of the block, so the transactions blocks are created more often, and each block can accommodate more transactions. Such measures are not unique and already implemented by other cryptocurrencies.19 Unlike other networks, however, Graft is maintained by always-on high performance supernodes which validate and authorize transactions in real time. Therefore. Each supernode not only has a most recent copy of full blockchain but also keeps a list of all pending authorization requests and completed transactions until they are added to the blockchain. Such architecture allows absorbing large picks of requests associated with seasonal and other changes in buyers and merchants activities. 
+
+## Transaction Types and Payment Flows
+Graft introduces the following transaction types and flows in order to facilitate merchant transactions and support existing payment and point of sale applications. 
+
+### Authorize  
+This is analogue to debit card authorization. Authorize is initiated by the merchant and confirmed by the payer. Payer’s account is temporarily “locked” for the amount and duration (number of blocks) requested by payee and confirmed by the payer, or until the amount is confirmed by subsequent Complete transaction. The authorization lock can be also released by Cancel transaction issued by payee before the expiration. The funds are automatically released back to the payer by the network after the expiration date/time if the payee did not claim them by sending Complete transaction.   
+
+Authorize is used when the exact final amount of transaction is unknown at the time of the sale initiation. Examples are pay at the pump at gas station, car rental check-in, hotel room reservation/check in, or restaurant pay at the table.   
+
+### PreAuth
+This is similar to long-term Authorize but the difference is that the payer does not guarantee that the funds will be available at the time of Completion. PreAuth is a long-term contract between the payer and the payee. However, unlike Authorize, which cannot be cancelled by the payee, PreAuth can be cancelled at any time by moving funds from the account associated with pre-authorized transaction. 
+
+PreAuth is suitable for long-term payment arrangements such as monthly service subscription or daily hotel room billing. The payee specifies (and the payer confirms) the maximum amount of single charge, the total number of charges, and the minimum interval between the charges.        
+
+### Complete
+Finalize the payment initiated by Authorize or PreAuth transactions. Actual amount of Complete can be less than previously authorized amount; there might be multiple Completions but the total amount will not exceed the amount of Authorize. 
+
+Complete is used after previously authorized transaction is finalized and the exact amount is known. For example, pay at the pump after the fueling is complete, car rental check out, hotel check out, or restaurant payment with tips added.  
+
+### Sale
+Sale is Authorize/Complete processed sequentially and automatically by the network as a single transaction. Sale is typical merchant transaction in online or brick and mortar store.   
+
+### Transfer
+Money transfer between Graft accounts. The same as Sale but initiated by the Sender, without Receiver consent. Can be used for peer-to-peer payments, exchanges, and transfers between different accounts.   
+
+### Cancel
+Cancels Authorize, releases the authorized funds (removes the account lock).
+
+### Issue
+Activates Graft prepaid card, gift certificate, loyalty points, store credit, or discount coupon. 
+
+### Redeem
+Payment using prepaid card, gift certificate, loyalty points, store credit, or discount coupon previously issued by Graft. 
+
+### Exchange
+Exchange funds between graftcoins and other major cryptocurrencies and local fiat currencies using the best offer from supernodes.
+
+### Schedule
+Schedules a transaction to occur at a later time/date.  Requires additional acknowledgement from the user.
+
+### Escrow
+Escrows the funds, attaching an event trigger when the funds will be released.  
+
+### Refund
+Refund transaction returns the funds referenced by the transaction pointer.  Requires RMA authorization from the seller.
+
+## Processing Transactions with Graftcoins as a Payment Method
+Unlike Bitcoin and other cryptocurrencies, and similar to payment cards, payment transaction requests are formatted and issued by the recipient (merchant), with only exception for Transfer and Exchange which are initiated by the sender (i.e. anyone who wants to move funds between Graft accounts). Unlike credit and debit cards, however, payment requests are explicitly confirmed by the buyer who is prompted by the Graft Wallet app before it digitally signs the transaction and sends it to the network. The only exception is Redeem of paper or plastic gift certificate or coupon which can be scanned by the merchant payment app if the customer does not want to use mobile app or does not have Graft account at all.  
+
+## Processing Transactions with Alternative Payment Methods
+In order to provide the best user experience for buyers and better conversion rates to merchants, Graft payment transaction can take various convertible cryptocurrencies or local fiat currencies in a form of credit/debit card as an input through the buyer’s Graft wallet app. Exchange fees, bank fees, and credit/debit card processing fees (charged from merchant in graftcoins) will be applied accordingly in addition to standard Graft transaction fees. Those fees will be invisible for the buyer as the method of payment will not affect the sale price. Automatic instant conversion will help adopt Graft payments by mainstream users who are not familiar enough with cryptocurrency ecosystem and still feel more comfortable with traditional method of payment, but seek better security, privacy, and full anonymity of their transactions. 
+
+If buyer decides to pay with alternative cryptocurrency or credit/debit card, Graft network will automatically exchange other cryptocurrency or convert credit card payment in local fiat currency into graftcoins in real time as a part of the transaction processing using service brokers. The service brokers, running on Graft supernodes and maintained by the supernode owners, are responsible for executing the exchange deals, charging the buyers, and executing payouts to merchants. If the buyer chooses alternative cryptocurrency or credit card as a method of payment, the supernode quorum automatically selects the best offer from all service brokers based on previous merchant selections and combination of the better exchange rate and higher reputation score. 
+
+The supernode owner can provide currency exchange or/and credit/debit card payment as an additional service in a form of service broker. The service broker is responsible for maintaining security and necessary compliance with exchange and payment card processing regulations, including PCI DSS compliance, anti-money laundering regulations, etc. 
+
