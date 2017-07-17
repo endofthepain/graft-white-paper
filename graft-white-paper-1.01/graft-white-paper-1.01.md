@@ -122,6 +122,19 @@ Micropayments (less than 10 GRF) | Regular Payments (more than 10 GRF)
 --- | ---
 0.1%  | 1% of log10 (significantly less than 0.1% as transaction amount grows)               
      
+The logarithmic fee schedule allows creating incentive for processing less transactions with small amounts (i.e. combining multiple transactions together whenever possible) while keeping low transaction fees for large transaction amounts (Table 2).
+
+**Table 2:** Examples of Graft Network Transaction Fees
+
+Transaction amount | Transaction Fee Amount | Effective Transaction Fee
+--- | --- | ---
+0.01 GRF | 0.00001 GRF | 0.1%
+1 GRF | 0.001 GRF | 0.1%
+10 GRF| 0.01 GRF | 0.1%
+50 GRF | 0.01699 GRF | 0.03398%
+100 GRF | 0.02 GRF | 0.02%
+1,000 GRF | 0.03 GRF | 0.003%
+1,000,000 GRF | 0.06 GRF | 0.000006%
 
 
 
