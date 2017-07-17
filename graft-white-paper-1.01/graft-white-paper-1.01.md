@@ -17,28 +17,28 @@ The Value of Decentralized Payment Processing
 To Fee or Not to Fee
 Graft Transaction Fees
 #### Transaction Processing 
-#### Confirmation Time: Introducing Real Time Authorizations
-#### Scalability
-#### Transaction Types and Payment Flows
-#### Processing Transactions with Graftcoins as a Payment Method
-#### Processing Transactions with Alternative Payment Methods
-#### Service Brokers
-#### Merchant Payouts
-#### Open Loop and Closed Loop Products: Gift Certificates, Loyalty Rewards, and Store Credits
-#### Offline Transactions
-### Security
-#### Availability
-#### Identity Management
-#### Identification, Authentication, and Authorization
-#### Identity Proofing
-#### Two Factor Authentication with Biometrics
-#### Reputation Score - Illuminate the Darkness
-#### Volatility
-#### Customer Support, Dispute Resolution, and Payment Insurance
-### Privacy
-### User Applications
-### Conclusion
-### References
+Confirmation Time: Introducing Real Time Authorizations
+Scalability
+Transaction Types and Payment Flows
+Processing Transactions with Graftcoins as a Payment Method
+Processing Transactions with Alternative Payment Methods
+Service Brokers
+Merchant Payouts
+Open Loop and Closed Loop Products: Gift Certificates, Loyalty Rewards, and Store Credits
+Offline Transactions
+#### Security
+Availability
+Identity Management
+Identification, Authentication, and Authorization
+Identity Proofing
+Two Factor Authentication with Biometrics
+Reputation Score - Illuminate the Darkness
+Volatility
+Customer Support, Dispute Resolution, and Payment Insurance
+#### Privacy
+#### User Applications
+#### Conclusion
+#### References
 
 
 # Abstract
