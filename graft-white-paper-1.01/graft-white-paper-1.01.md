@@ -279,3 +279,46 @@ Credit card | grafts | Credit Card Accept broker | None (Graft network) | Credit
 Credit card | bitcoins | Credit Card Accept broker | Bitcoin Payout Broker | Credit Card Accept broker fee, Bitcoin Payout Broker fee, Bitcoin transaction fees (paid by customer)
 Credit card | USD | Credit Card Accept broker | Bank Transfer Payout Broker, PayPal Payout Broker | Credit Card Accept broker fee, Bank or PayPal payout broker fee
 
+## Open Loop and Closed Loop Products: Gift Certificates, Loyalty Rewards, and Store Credits
+Graft will allow merchants to create and use their own open loop and closed loop20 products: gift certificates, loyalty rewards, or store credit program in minutes, without any initial investments, fees, or registration with any centralized authority. Merchants will be able to sell and accept gift certificates on their website or in brick-and-mortar store for local currency, other cryptocurrency, or graftcoins. Gift certificates will be available in a form of electronic certificate on mobile wallet app, sent by email, printed on paper, or as a physical plastic card (provided by Graft foundation or third parties). Using unique Graft flexible identity system, merchant can be compliant with regulations around gift certificates. 
+
+All Graft transactions, including issuing and redemption of gift certificates, loyalty points, and store credits are processed in real time using standard API, which can be easily integrated into existing point of sale applications. 
+Customers can buy gift certificates from various merchants and marketplaces, online and in store, and pay in local fiat currency or cryptocurrency. The gift certificate or store credit value in local fiat currency is guaranteed by the issuing merchant and by the network, so they will never lose its initial nominal value. Customer can redeem gift certificates at the issuing merchant store by its nominal local currency value or sell it anytime on marketplace for local fiat currency or cryptocurrency using its current market value.
+
+## Offline Transactions
+People familiar with payment card processing know that sometimes transaction can be approved by merchant without getting actual approval from the bank. This is called offline or local approval, or offline authorization, or sometime S&F (‘store and forward) as such offline authorization is forwarded to the server once the network is back online. 
+
+Crypto payments, however, assume that network is available 24/7, and there are no downtimes, which is not always true. In some situations, merchants take a risk and approve transactions locally because the risk of single chargeback is lower than the risk of losing multiple customers. Usually, there is a total limit amount for local authorization. After the system reaches this limit (the maximum risk), it stops issuing local approvals until the network is up again. But in case of short downtime, local authorization can go unnoticed to both cashiers and buyers. 
+
+Graft merchant app and single supernode are able to process offline crypto transactions based on the same principle, if they cannot communicate to the quorum and get consensus, and the merchant is ready to take a risk. The decision about offline approval will be also based on buyer’s and supernode’s reputation scores.   
+ 
+# Security
+As recent mega data breaches in retail and hospitality industries show, security is very important element of any payment ecosystem. The highest level of security can be achieved if security is part of the system design rather than “add-on” created after implementation is done. This is happened with payment card, which were not designed with security in mind, but it will not supposed to happen with cryptocurrencies, as they were designed to be resilient to most types of attacks. 
+Security of payment system is not just information security but it should include financial security as well. In addition to standard security features inherited from its predecessors, Graft will implement several enhancements from which both buyers and merchants benefit.
+
+## Availability
+The distributed network of “always on” supernodes ensures overall availability of the network. The client apps communicate with multiple supernodes simultaneously in order to get a quorum necessary for authorization. If one of the quorum supernodes is down it is automatically replaced by another one from the quorum candidate list which contains redundant number of candidates.    
+
+## Identity Management
+Relying on the wallets to do user management opens up a big security risk as wallets are typically free to implement their own security measures and can be compromised individually.  In order to protect the network and ensure integrity of user identities, Graft will implement a distributed identity provider service (embedded into supernode), available to the wallets as an OpenID Connect oAuth2 API call.
+
+As such, regardless of wallet implementation, user verification and authentication will be carried out by the Graft network, which will prevent compromised user identities, spoofing, replays, and man-in-the-middle attacks.
+
+## Identification, Authentication, and Authorization
+In the existing cryptocurrencies authentication / authorization has been the purview of the user application such as wallet, and has largely been an afterthought.  In context of financial transactions between buyers and sellers, however, where some degree of trust has to be established between the parties, regulations and compliances have to be dealt with, and a recourse has to be provided, a good system for authentication /authorization becomes critical.
+
+## Identity Proofing
+Identity proofing is a challenging topic as it carries both regulatory and privacy considerations.  Also effective identity proofing is not trivial.
+
+To understand the need for identity proofing consider a seller that might request strong level of identity proofing to make sure the buyer is eligible to purchase prescribed medications, and superior level of identity proofing to purchase arms (as defined by NIST Special Publication 800-63A21 in the US ). Conversely, buyers purchasing goods on an after-market, might want to protect themselves from buying stolen goods by requesting that the seller provide higher level of identity proofing.  
+Graft expects the client applications to comply with identity verification standards relevant to the jurisdictions.. Supernodes will provide resources for machine-based identity verification and fraud detection to assist merchants (and users) with compliance, ensure integrity of the payment network, and safety of the transactions.
+In order to limit user’s exposure when sharing their complete identity information is undesirable or counter to the regulatory laws (GDPR for example), Graft will facilitate request for and sharing of the identity attributes, such as person’s age, their address, etc to ensure compliance with local laws and regulations.  We’re also looking to add more metadata collection to the attribute sharing to enable auxiliary business logic such as drug interaction checks or loyalty rewards.
+
+Graft will allow optional multi-user control, when several users have access to the same merchant account, and multi-user custodianship, when two or more users are required in order to unlock some functions like transfer funds out of the account.
+
+## Two Factor Authentication with Biometrics
+Graft will implement best-practices, advanced authentication to go along with the user management service, which will include risk / threat analytics based on login/usage pattern as well as device and network characteristics, sophisticated multi-factor based authentication which will include biometrics, FIDO and other passwordless factors and techniques to identify the user. 
+
+The user ID will be given special attention to avoid “lost key” problem, but also to ensure ability to reliably ID the user quickly and in variety of situation.  To that end UserID will be comprised of multiple elements (keys) - some tied to devices and hardware tokens, and some to user biometrics - that will jointly provide a base for identifying a user via flexible set of attributes.  For example it will be possible to identify the user by a choice of 2 factors out of available ID elements (face, palm, iris, hardware token, device, etc). The unused factors will be used as a pool of factors to verify user’s identity.
+
+The ultimate goal is to make user identification and authentication work quickly, reliably, in wide variety of situations, on wide variety of devices; while providing user with choices and that are reflective of user preferences and limitations. 
