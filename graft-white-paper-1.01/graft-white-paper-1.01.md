@@ -17,7 +17,7 @@ The Value of Decentralized Payment Processing
 To Fee or Not to Fee
 
 Graft Transaction Fees
-#### Transaction Processing 
+### Transaction Processing 
 Confirmation Time: Introducing Real Time Authorizations
 
 Scalability
@@ -35,7 +35,7 @@ Merchant Payouts
 Open Loop and Closed Loop Products: Gift Certificates, Loyalty Rewards, and Store Credits
 
 Offline Transactions
-#### Security
+### Security
 Availability
 
 Identity Management
@@ -51,11 +51,10 @@ Reputation Score - Illuminate the Darkness
 Volatility
 
 Customer Support, Dispute Resolution, and Payment Insurance
-#### Privacy
-#### User Applications
-#### Conclusion
-#### References
-
+### Privacy
+### User Applications
+### Conclusion
+### References
 
 # Abstract
 Graft is a global, open-sourced, blockchain-based, decentralized payment gateway and processing platform that anyone can use.
@@ -406,3 +405,28 @@ Graft also plays well into the IoT space as some of the IoT devices need to “c
  
 # Conclusion
 Graft wouldn’t exist without its predecessors. It is based on ideas, principles, and technologies introduced and tested by creators of other cryptocurrencies. Using most recent technologies developed by crypto community along with newly developed solutions for transaction processing and security will allow Graft to compete with traditional payment methods and existing centralized payment processors. 
+
+# References
+1. Bitcoin. https://bitcoin.org/en/. 
+2. Dash. https://www.dash.org/.
+3. Bitpay. https://bitpay.com/.
+4. Graft Definition. Merriam-Webster (2017). https://www.merriam-webster.com/dictionary/graft#h2. 
+5. What Is Grafting? - Definition & Methods. Study.com (2017). http://study.com/academy/lesson/what-is-grafting-definition-methods-quiz.html. 
+6. Payment Card Industry (PCI) Data Security Standard. Requirements and Security Assessment Procedures. Version 3.2 PCI Security Standards Council (2016). https://pcicompliance.stanford.edu/sites/default/files/pci_dss_v3-2.pdf.
+7. NIST Special Publication 800-63. Revision 3. Digital Identity Guidelines. NIST (2017). https://pages.nist.gov/800-63-3/sp800-63-3.html. 
+8. IOTA. https://iota.org/. 
+9. Median Confirmation Time. Blockchain. https://blockchain.info/charts/median-confirmation-time?timespan=30days. 
+10. Bitcoin, Ethereum, Litecoin, Dash, Monero Avg. Transaction Fee historical chart. Bitinfocharts.com.  https://bitinfocharts.com/comparison/transactionfees-btc-eth-ltc-dash-xmr-sma7.html#1y. 
+11. https://squareup.com/reader?utm_medium=affiliate&utm_source=phg&utm_term=1100l4dN2S2g. 
+12. https://www.paypal.com/us/webapps/mpp/merchant-fees. 
+13. https://bitinfocharts.com/comparison/transactionfees-btc-eth-ltc-dash-xmr-sma7.html#1y. 
+14. https://blockchain.info/charts/avg-confirmation-time?timespan=30days. 
+15. https://blockchain.info/charts/median-confirmation-time?timespan=30days. 
+16. https://www.dash.org/forum/threads/first-transaction-using-instant-send-took-10-mins.12880/. 
+17. https://usa.visa.com/dam/VCOM/download/corporate/media/visa-fact-sheet-Jun2015.pdf.
+18. https://en.bitcoin.it/wiki/Scalability. 
+19. https://getmonero.org/.
+20. https://www.giftcards.com/gcgf/open-loop-versus-closed-loop-gift-cards. 
+21. https://pages.nist.gov/800-63-3/sp800-63-3.html. 
+22. https://cryptonote.org/. 
+
