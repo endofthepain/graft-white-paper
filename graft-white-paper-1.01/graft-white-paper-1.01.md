@@ -263,3 +263,19 @@ In addition to adding implementation modules to supernodes, Service Brokers may 
 Merchant can decide to receive their proceeds from transactions in other cryptocurrency such as Bitcoin or local fiat currency. In this case, the output of the transaction will be processed by service broker, as part of the same transaction, or later, depending on merchant settings. This ensures that the sale will pay the merchant the exact local currency price less applicable fees. The supernode quorum automatically selects the best offer from all service brokers based on combination of the merchant selections, better exchange rate, and higher reputation score.
 
 There are several payout options: graftcoins, original cryptocurrency,  other cryptocurrency, or local fiat currency (Table 3). For each of these options, there are payout broker services available on Graft. When the merchant selects the methods of payment they want to accept and the payout method, the Graft Point of Sale application will prompt with all available broker services options - depending on merchant identity and location attributes - so the merchant can sign up for all desirable broker services. If more than one payout broker service available for the same type of exchange and selected by merchant, the Graft Point of Sale app will automatically select the best offer during the transaction execution. 
+
+**Table 3:** Examples of Variety of Accepted methods of Payments and Payoffs
+
+Payment method selected by customer | Payout method selected by merchant | Accept Broker | Payout Broker | Additional Fees
+--- | --- | --- | --- | ---
+graftcoins | graftcoins | None (Graft network) | None (Graft network) | None
+Gift Certificate, Loyalty Rewards, Store Credit redemption |  N/A | None (Graft network) | N/A (Margin Broker might be needed to cover transaction fee) | None
+graftcoins | USD | None (Graft network) | Bank Transfer Payout Broker, PayPal Payout Broker | Payout Broker fee
+graftcoins | bitcoins | None (Graft network) | Bitcoin Payout Broker | Bitcoin Payout Broker fee
+bitcoins | graftcoins | Bitcoin Accept Broker | None (Graft network) | Bitcoin Broker fee, Bitcoin transaction fee (paid by customer)
+bitcoins | bitcoins | Bitcoin Accept Broker | Bitcoin Payout Broker | Bitcoin Accept Broker fee, Bitcoin Payout Broker fee, Bitcoin transaction fee (paid by customer)
+bitcoins | USD | Bitcoin Accept Broker | Bank Transfer Payout Broker, PayPal Payout Broker | Bitcoin Accept Broker fee, Payout Broker fee
+Credit card | grafts | Credit Card Accept broker | None (Graft network) | Credit Card Accept broker fee
+Credit card | bitcoins | Credit Card Accept broker | Bitcoin Payout Broker | Credit Card Accept broker fee, Bitcoin Payout Broker fee, Bitcoin transaction fees (paid by customer)
+Credit card | USD | Credit Card Accept broker | Bank Transfer Payout Broker, PayPal Payout Broker | Credit Card Accept broker fee, Bank or PayPal payout broker fee
+
