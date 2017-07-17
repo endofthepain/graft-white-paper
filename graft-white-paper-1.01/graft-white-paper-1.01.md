@@ -151,4 +151,11 @@ The world’s moving towards “thin” devices. People around the world use mor
 ## Confirmation Time: Introducing Real Time Authorizations
 Long confirmation time[14] (from several minutes to several hours, depending on transaction fee[15]) is one of the main reasons for low adoption of cryptocurrencies in retail and hospitality sectors where customers cannot wait and so merchants must process payment instantly. Unlike some other cryptocurrency networks that tried to resolve this problem by introducing special add-on systems or transaction types16, Graft processes all its transactions in real time (less than 3 seconds), without charging an extra fee or compromising the principle of decentralization (see Figure 3). 
 
+![alt text](https://github.com/graft-project/graft-white-paper/blob/master/graft-white-paper-1.01/images/Figure%203.png "Processing Bitcoin Transaction by Centralized Intermediary")
+**Figure 3:** Simplified Graft Payment Flow
+
+This is achieved through using a consensus of always-on trusted supernodes with ability to perform a distributed instant authorization lock on input account and communicate response back to the client within milliseconds. The supernodes also maintain the Graft blockchain so no transactions can be authorized “off chain”.  
+
+### Supernodes
+All transactions are processed by the network of always-on Graft network nodes -- supernodes -- in real time (less than 3 seconds). All the fees are paid by the receiver (merchant) to the supernodes participating in quorum and (optional) service brokers participating in transaction processing. Supernodes are responsible for both blockchain maintenance (mining blocks) and transaction processing. The owners of the nodes are financially responsible for transactions they process. Such responsibility is achieved by financial interest: mining fees, transaction fees, and collateral paid to escrow service brokers. In case of problem caused by the supernode, the funds from collateral will be available for compensation.
 
