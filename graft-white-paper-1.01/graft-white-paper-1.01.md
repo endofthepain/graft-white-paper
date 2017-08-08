@@ -20,6 +20,14 @@ Graft Transaction Fees
 ### Transaction Processing 
 Confirmation Time Problem: Introducing Real Time Authorizations
 
+Supernodes
+
+DAPI
+
+Authorization Sample Selection
+
+Supernode Rewards
+
 Scalability
 
 Transaction Types and Payment Flows
@@ -191,13 +199,13 @@ Long confirmation time[14] (from several minutes to several hours, depending on 
 
 This is achieved through using a consensus of always-on trusted supernodes with ability to perform a distributed instant authorization lock on input account and communicate response back to the client within milliseconds. The supernodes also maintain the Graft blockchain so no transactions can be authorized “off chain”.  
 
-### Supernodes
+## Supernodes
 All transactions are processed by the network of always-on Graft network nodes -- supernodes -- in real time (less than 3 seconds). All the fees are paid by the receiver (merchant) to the supernodes participating in authorization sample and (optional) service brokers participating in transaction processing. Supernodes are responsible for both settlement (block mining) and real-time transaction approvals. The owners of the nodes are responsible for transactions they process. Such responsibility is achieved by financial interest: mining rewards and transaction fees.
 
-### DAPI
+## DAPI
 Unlike regular API, which is hosted at server or server farm, DAPI does not have a single address as it is running on multiple supernodes. Any single node can serve the DAPI call anytime. The DAPI calls are stateless which means that the supernodes do not maintain any permanent session with the client, and all the data necessary for processing is instantly distributed and available on all the nodes. The client app which consumes DAPI maintains a list of supernodes it communicates with, which is a relatively small group of addresses selected from the authorization sample. However, the client app is free to select a particular trusted supernode and “stick” with it. For example, merchant POS or wallet users can decide to host their own supernode which they trust. Even such a “private” supernode may not be granted a right to participate in authorization sample due to resource limitations (see Authorization Sample Selection Algorithm section below), but they can provide an extra layer of privacy of their owners.
 
-### Authorization Sample Selection Algorithm
+## Authorization Sample Selection
 In order to perform real time (“instant”) authorizations, the network relies on sample -  a group of selected trusted supernodes which will “represent” the network and validate the transaction, prevent the double-spending, and sign the instant approval before transaction is “confirmed” by the blockchain (i.e. before it’s added to the block and the block is added to the blockchain).    
 
 The authorization sample consists of 8 supernodes that solved last 8 blocks starting from current height -10. If the same supernode has solved more than one block within the last 8 blocks (starting from height - 10) or the selected node went offline, the list is automatically extended and another supernode from the “bottom” of the list is added to the sample. 
@@ -208,7 +216,7 @@ The supernodes that perform successful mining but fail to process real-time auth
 
 When new transaction request is initiated by the merchant point of sale, it is assigned the current block height which defines the authorization sample. The height can be incremented while transaction is still in progress, but it does not change the sample height that was initially assigned to the transaction request. The merchant relay supernode that initially formats the transaction request selects the sample supernodes, but this selection is validated by each member of the sample plus the wallet’s relay.
 
-### Supernode Rewards
+## Supernode Rewards
 Block mining reward must be split between the miner’s supernode and the authorization samples. The sample consists of 8 supernodes (can be just 2 for PoC). Any supernode from the sample can be also the “relay” supernode - the one that facilitates the merchant transaction by communicating with the merchant POS or/and the buyer’s wallet on one side, and the rest of the authorization sample supernodes on the other side. The relay supernode can be selected randomly by the point of sale or wallet from the current authorization sample linked to the transaction. Merchant or wallet can also select specific trusted relay supernode. In fact, merchant or wallet can host their own supernodes if the are seeking an extra layer of security and privacy, and earn an income from mining and transaction processing. However, the relay nodes do not get any rewards or fees if they are not included in the authorization sample. 
 Each supernode in the authorization sample receives a share of block mining reward and transaction fee. Each supernode participating in the sample, including the relay supernode, receives 0.5 /n of the transaction fee and 0.5 / n / N of the block mining reward, where n is the number of supernodes in the authorization sample, and N is the number of transactions in the block (another 50% of the block reward goes to the mining supernode).
 
