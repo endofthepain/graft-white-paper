@@ -42,6 +42,8 @@ Merchant Payouts
 
 Open Loop and Closed Loop Products: Gift Certificates, Loyalty Rewards, and Store Credits
 
+Merchant (Domain) Tokens
+
 Offline Transactions
 ### Security
 Availability
@@ -344,6 +346,15 @@ Graft will allow merchants to create and use their own open loop and closed loop
 
 All Graft transactions, including issuing and redemption of gift certificates, loyalty points, and store credits are processed in real time using standard API, which can be easily integrated into existing point of sale applications. 
 Customers can buy gift certificates from various merchants and marketplaces, online and in store, and pay in local fiat currency or cryptocurrency. The gift certificate or store credit value in local fiat currency is guaranteed by the issuing merchant and by the network, so they will never lose its initial nominal value. Customer can redeem gift certificates at the issuing merchant store by its nominal local currency value or sell it anytime on marketplace for local fiat currency or cryptocurrency using its current market value.
+
+## Merchant (Domain) Tokens
+
+In addition to fast and inexpensive transactions, merchants place high value on customer loyalty and branding.
+This functionality will be enabled by the token layer of the Graft currency. The token represents domain (merchant) specific Graft use, and offers smart contract backed functionality like loyalty point accumulation and use, reward points, sale discounts, spending discounts, competitor discounts, coupons, store credit, etc.
+
+A coffee chain, for example, can create a merchant token and attach promotion rules that would provide a patron ability to get discounts on iced drinks at given time of the day, it would tally the purchases with the establishment and offer rewards based on activity or non-activity.
+
+Finally, Graft Domain Tokens would provide a very efficient mechanism for couponing by allowing the merchants to open up the coupon creation and assignment rules within their domain network.
 
 ## Offline Transactions
 People familiar with payment card processing know that sometimes transaction can be approved by merchant without getting actual approval from the bank. This is called offline or local approval, or offline authorization, or sometime S&F (‘store and forward) as such offline authorization is forwarded to the server once the network is back online. 
