@@ -7,6 +7,8 @@ Slava Gomzin, Dan Itkis
 
 Version 1.01
 
+August 2017
+
 
 ## Table of Contents
 ### Abstract
@@ -167,10 +169,10 @@ In Graft network, however, the fee is used for two reasons. First, to avoid netw
 The problem with Bitcoin and other cryptocurrencies’ fee is that they charge the wrong side of the transaction. It’s even worse than traditional card payments because unlike plastic payments, both buyer and merchant pay fees for cryptocurrency transaction: the buyer pays to the cryptocurrency network, while the merchant pays to the payment processor.[9] The (average/layman) payer is often confused by the process which looks more like a betting, without clear explanation of the fee schedule, which obviously does not make cryptocurrency payments very attractive. 
 
 ### Micropayments: How Do I Pay with Crypto for a Cup of Coffee? 
-Another problem currently experienced by Bitcoin is its inability to handle micropayments due to high transaction fees.10 Graft resolves this problem by introducing a unique (in cryptocurrencies world) approach to transaction fees.
+Another problem currently experienced by Bitcoin is its inability to handle micropayments due to high transaction fees.[10] Graft resolves this problem by introducing a unique (in cryptocurrencies world) approach to transaction fees.
 
 ## Graft Transaction Fees
-Graft reintroduces convenient fee structure with no fees for the payer so all fees are paid by the receiver (merchant), just like everyone used to do with traditional electronic methods of payment. Graft makes micropayments accessible to everyone by setting very low (comparing to credit cards11 and online payment processors,[12] and other cryptocurrencies[13]) fees, but without fixed fee component (Table 1). All fees are paid by the payees.  
+Graft reintroduces convenient fee structure with no fees for the payer so all fees are paid by the receiver (merchant), just like everyone used to do with traditional electronic methods of payment. Graft makes micropayments accessible to everyone by setting very low (comparing to credit cards[11] and online payment processors,[12] and other cryptocurrencies[13]) fees, but without fixed fee component (Table 1). All fees are paid by the payees.  
  
 **Table 1:** Graft Network Transaction Fees
 
@@ -371,17 +373,16 @@ Credit card | bitcoins | Credit Card Accept broker | Bitcoin Payout Broker | Cre
 Credit card | USD | Credit Card Accept broker | Bank Transfer Payout Broker, PayPal Payout Broker | Credit Card Accept broker fee, Bank or PayPal payout broker fee
 
 ## Open Loop and Closed Loop Products: Gift Certificates, Loyalty Rewards, and Store Credits
-Graft will allow merchants to create and use their own open loop and closed loop20 products: gift certificates, loyalty rewards, or store credit program in minutes, without any initial investments, fees, or registration with any centralized authority. Merchants will be able to sell and accept gift certificates on their website or in brick-and-mortar store for local currency, other cryptocurrency, or graftcoins. Gift certificates will be available in a form of electronic certificate on mobile wallet app, sent by email, printed on paper, or as a physical plastic card (provided by Graft foundation or third parties). Using unique Graft flexible identity system, merchant can be compliant with regulations around gift certificates. 
+Graft will allow merchants to create and use their own open loop and closed loop[20] products: gift certificates, loyalty rewards, or store credit program in minutes, without any initial investments, fees, or registration with any centralized authority. Merchants will be able to sell and accept gift certificates on their website or in brick-and-mortar store for local currency, other cryptocurrency, or graftcoins. Gift certificates will be available in a form of electronic certificate on mobile wallet app, sent by email, printed on paper, or as a physical plastic card (provided by Graft foundation or third parties). Using unique Graft flexible identity system, merchant can be compliant with regulations around gift certificates. 
 
 All Graft transactions, including issuing and redemption of gift certificates, loyalty points, and store credits are processed in real time using standard API, which can be easily integrated into existing point of sale applications. 
 Customers can buy gift certificates from various merchants and marketplaces, online and in store, and pay in local fiat currency or cryptocurrency. The gift certificate or store credit value in local fiat currency is guaranteed by the issuing merchant and by the network, so they will never lose its initial nominal value. Customer can redeem gift certificates at the issuing merchant store by its nominal local currency value or sell it anytime on marketplace for local fiat currency or cryptocurrency using its current market value.
 
 ## Merchant (Domain) Tokens
-
 In addition to fast and inexpensive transactions, merchants place high value on customer loyalty and branding.
 This functionality will be enabled by the token layer of the Graft currency. The token represents domain (merchant) specific Graft use, and offers smart contract backed functionality like loyalty point accumulation and use, reward points, sale discounts, spending discounts, competitor discounts, coupons, store credit, etc.
 
-A coffee chain, for example, can create a merchant token and attach promotion rules that would provide a patron ability to get discounts on iced drinks at given time of the day, it would tally the purchases with the establishment and offer rewards based on activity or non-activity.
+A coffee shop chain, for example, can create a merchant token and attach promotion rules that would provide a patron ability to get discounts on iced drinks at given time of the day, it would tally the purchases with the establishment and offer rewards based on activity or non-activity.
 
 Finally, Graft Domain Tokens would provide a very efficient mechanism for couponing by allowing the merchants to open up the coupon creation and assignment rules within their domain network.
 
@@ -415,7 +416,7 @@ In the existing cryptocurrencies authentication / authorization has been the pur
 ## Identity Proofing
 Identity proofing is a challenging topic as it carries both regulatory and privacy considerations.  Also effective identity proofing is not trivial.
 
-To understand the need for identity proofing consider a seller that might request strong level of identity proofing to make sure the buyer is eligible to purchase prescribed medications, and superior level of identity proofing to purchase arms (as defined by NIST Special Publication 800-63A21 in the US ). Conversely, buyers purchasing goods on an after-market, might want to protect themselves from buying stolen goods by requesting that the seller provide higher level of identity proofing.  
+To understand the need for identity proofing consider a seller that might request strong level of identity proofing to make sure the buyer is eligible to purchase prescribed medications, and superior level of identity proofing to purchase arms (as defined by NIST Special Publication 800-63A[21] in the US ). Conversely, buyers purchasing goods on an after-market, might want to protect themselves from buying stolen goods by requesting that the seller provide higher level of identity proofing.  
 Graft expects the client applications to comply with identity verification standards relevant to the jurisdictions.. Supernodes will provide resources for machine-based identity verification and fraud detection to assist merchants (and users) with compliance, ensure integrity of the payment network, and safety of the transactions.
 In order to limit user’s exposure when sharing their complete identity information is undesirable or counter to the regulatory laws (GDPR for example), Graft will facilitate request for and sharing of the identity attributes, such as person’s age, their address, etc to ensure compliance with local laws and regulations.  We’re also looking to add more metadata collection to the attribute sharing to enable auxiliary business logic such as drug interaction checks or loyalty rewards.
 
@@ -445,7 +446,7 @@ Most merchants want to get paid in dollars (or their local currency). Merchants 
 ## Customer Support, Dispute Resolution, and Payment Insurance
 One of the main showstoppers of cryptocurrency adoption by mainstream consumers and merchants is the lack of the authority and the business owners who could help answer questions and resolve technical and business issues. Also, it is impossible to “fix” a wrong cryptocurrency transaction in case of human error, fraudulent activity, or technical glitch. Obviously, all these issues are caused and justified by decentralized, anonymous,  and independent nature of crypto payments. However, the good reasons do not help resolve the problems. The open source community resolved those problems by introducing an optional customer support for free open source products. Linux OS supported by Redhat and MySQL database supported by Oracle are just two successful examples of providing commercial-level support to free open source products.
 
-In order to facilitate adoption of Graft payment, Graft Foundation provides free customer support and dispute resolution services to Graft account holders. Merchants with high transaction volume can get 24/7 real time support and dispute resolution assistance. Graft Foundation or/and service brokers will insure payments up to equivalent of USD $100 and compensate customers or merchants for their lost of funds due to fraud or technical issues.   
+In order to facilitate adoption of Graft payment, Graft Foundation provides free customer support and dispute resolution services to Graft account holders. Merchants with high transaction volume can get 24/7 real time support and dispute resolution assistance. Graft Foundation or/and service brokers may insure payments up to equivalent of USD $100 and compensate customers or merchants for their lost of funds due to fraud or technical issues.   
  
 # Privacy
 Oftentimes, there is a wrong perception of the need for privacy. In reality, majority of legitimate buyers don’t mind to disclose their identity to the merchant, especially, if they benefit from such disclosure, or such disclosure is necessary to process transaction. In the same way, the buyers want to make sure that the merchant they send payment to is the right person or organization and not just their impersonator. What neither merchant nor buyer want is anyone else’s ability to recognize their identities and see all the details of their transactions by scanning the publicly accessible blockchain. 
