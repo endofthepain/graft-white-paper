@@ -32,6 +32,8 @@ Supernode Rewards
 
 Scalability
 
+Offline Transaction Approvals
+
 ### Transaction Types and Payment Flows
 Processing Transactions with Graftcoins as a Payment Method
 
@@ -215,6 +217,7 @@ There are cryptocurrencies with block (settlement) interval less than 2 minutes.
 
 Unlike most crypto payment systems, and similar to traditional payment systems such as credit card processing, Graft payment is divided into two phases: authorization and settlement. Like in traditional payment world, authorization happens in near real time (hundreds milliseconds to a few seconds, depending on multiple external factors), while settlement is performed later on, usually within 2 minutes (compare to several hours and even days in traditional payment networks). 
 
+### Account Lock
 The key image is the unique "fingerprint" that represents the spending address and amount without disclosing any details about the buyer or the amount. By providing the key image for upcoming transaction to the network of supernodes, the buyer's wallet temporarily "locks" its spending "account", so no other transaction with the same key image (from teh same account) can happen until the "locked" transaction is settled or the lock is removed. If the buyer will try to finalize the transaction with the key image different from the one used in the original lock, such transaction will be rejected by the supernodes. On the other hand, the key image does not contain any information about the buyer or buyer’s wallet. 
 In additional, any traces of communication between the buyer (wallet app), the merchant (point of sale app), and the supernodes (selected relay and sample supernodes) during authorization phase are removed once transaction is settled (written into the blockchain and confirmed by 10 blocks).
 
@@ -237,10 +240,17 @@ Each transaction will include the public addresses and the signature of the samp
 
 In order to speed up the authorization process, the merchant point of sale app can instruct the relay supernode to ignore the responses from the rest of the authorization sample as soon as it receives more than 50% of the approved responses from “fastest” supernodes and zero rejected responses; however, this mode will increase the risk of fraud, which can be acceptable in specific cases of micropayments when transaction processing speed requirements are extremely important.
 
-### Scalability
+## Scalability
 Scalability of payment network is the ability to process a large number of transactions simultaneously without degradation of performance. Scalability of the payment network is usually measured in tps (transactions per second). For example, Visa claims its authorization network is capable to process 56,000 tps,[17] while Bitcoin network is restricted to a sustained rate of only 7 tps.[18]
 
-Some of the measures that can be used to ensure higher scalability are decreasing the block creation interval to 2 minutes and removing the size limit of the block, so the transactions blocks are created more often, and each block can accommodate more transactions. Such measures are not unique and already implemented by other cryptocurrencies.[19] Unlike other networks, however, Graft is maintained by always-on high performance supernodes which validate and authorize transactions in real time. Therefore. Each supernode not only has a most recent copy of full blockchain but also keeps a list of all pending authorization requests and completed transactions until they are added to the blockchain. Such architecture allows absorbing large picks of requests associated with seasonal and other changes in buyers and merchants activities. 
+Some of the measures that can be used to ensure higher scalability are decreasing the block creation interval to 2 minutes and removing the size limit of the block, so the transactions blocks are created more often, and each block can accommodate more transactions. Such measures are not unique and already implemented by other cryptocurrencies.[19] Unlike other networks, however, Graft is maintained by always-on high performance supernodes which validate and authorize transactions in real time. Therefore, each supernode not only has a most recent copy of full blockchain but also keeps a list of all pending authorization requests and completed transactions until they are added to the blockchain. Such architecture allows absorbing large picks of requests associated with seasonal and other changes in buyers and merchants activities. 
+
+## Offline Transaction Approvals
+People familiar with payment card processing know that sometimes transaction can be approved by merchant without getting actual approval from the bank. This is called offline or local approval, or offline authorization, or sometimes S&F ("store and forward") as such offline authorization is forwarded to the server once the network is back online. 
+
+Crypto payments, however, assume that network is available 24/7, and there are no downtimes, which is not always true. In some situations, merchants take a risk and approve transactions locally because the risk of single chargeback is lower than the risk of losing multiple customers. Usually, there is a total limit amount for local authorization. After the system reaches this limit (the maximum risk), it stops issuing local approvals until the network is up again. But in case of short downtime, local authorization can go unnoticed to both cashiers and buyers. 
+
+Graft merchant point of sale app and single relay supernode will be able to process offline crypto transactions based on the same principle, if they cannot communicate to the authorization sample and get consensus, and the merchant is ready to take a risk. The decision about offline approval will be also based on buyer’s and supernode’s reputation scores.    
 
 # Transaction Types and Payment Flows
 Graft introduces the following transaction types and flows in order to facilitate merchant transactions and support existing payment and point of sale applications. 
@@ -387,13 +397,6 @@ Security of payment system is not just information security but it should includ
 
 ## Availability
 The distributed network of “always on” supernodes ensures overall availability of the network. The client apps communicate with multiple supernodes simultaneously in order to get a concensus necessary for authorization. If one of the sample supernodes is down it is automatically replaced by another one from the authorization sample candidate list which contains virtually endless number of candidates.
-
-### Offline Transactions
-People familiar with payment card processing know that sometimes transaction can be approved by merchant without getting actual approval from the bank. This is called offline or local approval, or offline authorization, or sometime S&F (‘store and forward) as such offline authorization is forwarded to the server once the network is back online. 
-
-Crypto payments, however, assume that network is available 24/7, and there are no downtimes, which is not always true. In some situations, merchants take a risk and approve transactions locally because the risk of single chargeback is lower than the risk of losing multiple customers. Usually, there is a total limit amount for local authorization. After the system reaches this limit (the maximum risk), it stops issuing local approvals until the network is up again. But in case of short downtime, local authorization can go unnoticed to both cashiers and buyers. 
-
-Graft merchant app and single supernode are able to process offline crypto transactions based on the same principle, if they cannot communicate to the authorization sample and get consensus, and the merchant is ready to take a risk. The decision about offline approval will be also based on buyer’s and supernode’s reputation scores.    
 
 ## Identity Management
 Relying on the wallets to do user management opens up a big security risk as wallets are typically free to implement their own security measures and can be compromised individually.  In order to protect the network and ensure integrity of user identities, Graft will implement a distributed identity provider service (embedded into supernode), available to the wallets as an OpenID Connect oAuth2 API call.
