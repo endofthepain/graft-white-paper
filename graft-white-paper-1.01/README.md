@@ -1,1 +1,8 @@
-This is the version currently open to public comments and suggeestions. The most recent official published version is 0.02.
+Version 1.01 is the most recent official version of the Graft white paper.
+
+Changes since the last version:
+- relay supernode definition
+- authorization sample definition
+- authorization sample selection algoritm
+- decentralzied crowdfunded credit cards
+- merchant (domain) tokens
