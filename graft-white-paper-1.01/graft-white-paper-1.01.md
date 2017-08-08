@@ -416,7 +416,7 @@ In the existing cryptocurrencies authentication / authorization has been the pur
 ## Identity Proofing
 Identity proofing is a challenging topic as it carries both regulatory and privacy considerations.  Also effective identity proofing is not trivial.
 
-To understand the need for identity proofing consider a seller that might request strong level of identity proofing to make sure the buyer is eligible to purchase prescribed medications, and superior level of identity proofing to purchase arms (as defined by NIST Special Publication 800-63A[21] in the US ). Conversely, buyers purchasing goods on an after-market, might want to protect themselves from buying stolen goods by requesting that the seller provide higher level of identity proofing.  
+To understand the need for identity proofing consider a seller that might request strong level of identity proofing to make sure the buyer is eligible to purchase prescribed medications, and superior level of identity proofing to purchase arms (as defined by NIST Special Publication 800-63A in the US ). Conversely, buyers purchasing goods on an after-market, might want to protect themselves from buying stolen goods by requesting that the seller provide higher level of identity proofing.  
 Graft expects the client applications to comply with identity verification standards relevant to the jurisdictions.. Supernodes will provide resources for machine-based identity verification and fraud detection to assist merchants (and users) with compliance, ensure integrity of the payment network, and safety of the transactions.
 In order to limit user’s exposure when sharing their complete identity information is undesirable or counter to the regulatory laws (GDPR for example), Graft will facilitate request for and sharing of the identity attributes, such as person’s age, their address, etc to ensure compliance with local laws and regulations.  We’re also looking to add more metadata collection to the attribute sharing to enable auxiliary business logic such as drug interaction checks or loyalty rewards.
 
@@ -456,7 +456,7 @@ Privacy is a delicate subject for crypto currencies and the payment industry in 
 We find that the best way to approach this problem is using a system of identity verification and identity attribute sharing that is consistent with Digital Identity guidelines set out by government regulators focused on privacy enhancement (i.e. NIST 800-63 in the US or GDPR in EU) - standards which calls for differentiated identity proofing and authentication.  
 Graft implements digital identity profile which is attached to Graft wallet, with ability to share the data from the digital identity with the counter-party incrementally and based on user permissions at the time of the transaction.  These permissions include sharing certain attributes (such as age, home location, address, name, etc..) selectively and per transaction.
 
-Graft implements CryptoNote[22] as an underlying transaction recording protocol which provides a high degree of privacy comparing to Bitcoin and other cryptocurrencies by hiding information about sender and receiver.
+Graft implements CryptoNote[21] as an underlying transaction recording protocol which provides a high degree of privacy comparing to Bitcoin and other cryptocurrencies by hiding information about sender and receiver.
  
 # User Applications
 All Graft user apps are “light” clients that do not store the blockchain or process any transactions. The user apps use remote API calls to communicate with “always on” Graft nodes which mine new transactions blocks and process transaction requests in real time. 
@@ -488,16 +488,15 @@ Graft wouldn’t exist without its predecessors. It is based on ideas, principle
 8. IOTA. https://iota.org/. 
 9. Median Confirmation Time. Blockchain. https://blockchain.info/charts/median-confirmation-time?timespan=30days. 
 10. Bitcoin, Ethereum, Litecoin, Dash, Monero Avg. Transaction Fee historical chart. Bitinfocharts.com.  https://bitinfocharts.com/comparison/transactionfees-btc-eth-ltc-dash-xmr-sma7.html#1y. 
-11. https://squareup.com/reader?utm_medium=affiliate&utm_source=phg&utm_term=1100l4dN2S2g. 
-12. https://www.paypal.com/us/webapps/mpp/merchant-fees. 
-13. https://bitinfocharts.com/comparison/transactionfees-btc-eth-ltc-dash-xmr-sma7.html#1y. 
-14. https://blockchain.info/charts/avg-confirmation-time?timespan=30days. 
-15. https://blockchain.info/charts/median-confirmation-time?timespan=30days. 
-16. https://www.dash.org/forum/threads/first-transaction-using-instant-send-took-10-mins.12880/. 
-17. https://usa.visa.com/dam/VCOM/download/corporate/media/visa-fact-sheet-Jun2015.pdf.
-18. https://en.bitcoin.it/wiki/Scalability. 
-19. https://getmonero.org/.
-20. https://www.giftcards.com/gcgf/open-loop-versus-closed-loop-gift-cards. 
-21. https://pages.nist.gov/800-63-3/sp800-63-3.html. 
-22. https://cryptonote.org/. 
+11. Square. https://squareup.com/reader?utm_medium=affiliate&utm_source=phg&utm_term=1100l4dN2S2g. 
+12. PayPal. https://www.paypal.com/us/webapps/mpp/merchant-fees. 
+13. Bitcoin, Ethereum, Litecoin, Dash, Monero Avg. Transaction Fee historical chart. Bitcoincharts. https://bitinfocharts.com/comparison/transactionfees-btc-eth-ltc-dash-xmr-sma7.html#1y. 
+14. Average Confirmation Time. Blockchain. https://blockchain.info/charts/avg-confirmation-time?timespan=30days. 
+15. Median Confirmation Time. Blockchain. https://blockchain.info/charts/median-confirmation-time?timespan=30days. 
+16. First transaction using instant send took 10 mins. Dash. https://www.dash.org/forum/threads/first-transaction-using-instant-send-took-10-mins.12880/. 
+17. Visa Inc. at a Glance. Visa. https://usa.visa.com/dam/VCOM/download/corporate/media/visa-fact-sheet-Jun2015.pdf.
+18. Scalability. Bitcoin Wiki. https://en.bitcoin.it/wiki/Scalability. 
+19. MONERO. Private Digital Currency. https://getmonero.org/.
+20. What are Open Loop and Closed Loop Gift Cards? Shelley Hunter. GiftCards.com. https://www.giftcards.com/gcgf/open-loop-versus-closed-loop-gift-cards. 
+21. CryptoNote. https://cryptonote.org/. 
 
