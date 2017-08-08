@@ -1,5 +1,5 @@
 # Graft
-## Decentralized Global Merchant Payment Processor
+## Decentralized, Real-time Credit, Debit, and Crypto Payment Processing Network
 
 
 Slava Gomzin, Dan Itkis
