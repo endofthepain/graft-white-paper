@@ -32,7 +32,7 @@ Supernode Rewards
 
 Scalability
 
-Transaction Types and Payment Flows
+### Transaction Types and Payment Flows
 
 Processing Transactions with Graftcoins as a Payment Method
 
@@ -241,7 +241,7 @@ Scalability of payment network is the ability to process a large number of trans
 
 Some of the measures that can be used to ensure higher scalability are decreasing the block creation interval to 2 minutes and removing the size limit of the block, so the transactions blocks are created more often, and each block can accommodate more transactions. Such measures are not unique and already implemented by other cryptocurrencies.[19] Unlike other networks, however, Graft is maintained by always-on high performance supernodes which validate and authorize transactions in real time. Therefore. Each supernode not only has a most recent copy of full blockchain but also keeps a list of all pending authorization requests and completed transactions until they are added to the blockchain. Such architecture allows absorbing large picks of requests associated with seasonal and other changes in buyers and merchants activities. 
 
-## Transaction Types and Payment Flows
+# Transaction Types and Payment Flows
 Graft introduces the following transaction types and flows in order to facilitate merchant transactions and support existing payment and point of sale applications. 
 
 ### Authorize  
