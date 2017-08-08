@@ -24,6 +24,8 @@ Supernodes
 
 DAPI
 
+Real Time Approvals by Authorization Sample
+
 Authorization Sample Selection
 
 Supernode Rewards
@@ -207,8 +209,16 @@ All transactions are processed by the network of always-on Graft network nodes -
 ## DAPI
 Unlike regular API, which is hosted at server or server farm, DAPI does not have a single address as it is running on multiple supernodes. Any single node can serve the DAPI call anytime. The DAPI calls are stateless which means that the supernodes do not maintain any permanent session with the client, and all the data necessary for processing is instantly distributed and available on all the nodes. The client app which consumes DAPI maintains a list of supernodes it communicates with, which is a relatively small group of addresses selected from the authorization sample. However, the client app is free to select a particular trusted supernode and “stick” with it. For example, merchant POS or wallet users can decide to host their own supernode which they trust. Even such a “private” supernode may not be granted a right to participate in authorization sample due to resource limitations (see Authorization Sample Selection Algorithm section below), but they can provide an extra layer of privacy of their owners.
 
+## Real Time Approvals by Authorization Sample
+There are cryptocurrencies with block (settlement) interval less than 2 minutes. However, reducing the interval still does not resolve the real-time ("instant") authorization problem. Even with 30 seconds block interval, it is still too long for real time payments (credit card authorizations are in a range of hundreds milliseconds to a few seconds), not to mention the fact that 1 confirmation (1 block) is still not enough to mitigate the risk of fork for significant amounts. So special additional technology is still required to resolve the real-time authorization problem. The Graft supernode scheme resolves this problem by *authorization sample*, when approvals are issued in real time by the selected group of trusted supernodes, which guarantees that the buyer cannot spend the same money more than once until the transaction is settled (written into the blockchain). The settlement (minimg) is performed by the "underlying" part of the supernode as well, within 2 minutes.
+
+Unlike most crypto payment systems, and similar to traditional payment systems such as credit card processing, Graft payment is divided into two phases: authorization and settlement. Like in traditional payment world, authorization happens in near real time (hundreds milliseconds to a few seconds, depending on multiple external factors), while settlement is performed later on, usually within 2 minutes (compare to several hours and even days in traditional payment networks). 
+
+The key image is the unique "fingerprint" that represents the spending address and amount without disclosing any details about the buyer or the amount. By providing the key image for upcoming transaction to the network of supernodes, the buyer's wallet temporarily "locks" its spending "account", so no other transaction with the same key image (from teh same account) can happen until the "locked" transaction is settled or the lock is removed. If the buyer will try to finalize the transaction with the key image different from the one used in the original lock, such transaction will be rejected by the supernodes. On the other hand, the key image does not contain any information about the buyer or buyer’s wallet. 
+In additional, any traces of communication between the buyer (wallet app), the merchant (point of sale app), and the supernodes (selected relay and sample supernodes) during authorization phase are removed once transaction is settled (written into the blockchain and confirmed by 10 blocks).
+
 ## Authorization Sample Selection
-In order to perform real time (“instant”) authorizations, the network relies on sample -  a group of selected trusted supernodes which will “represent” the network and validate the transaction, prevent the double-spending, and sign the instant approval before transaction is “confirmed” by the blockchain (i.e. before it’s added to the block and the block is added to the blockchain).    
+In order to perform real time (“instant”) authorizations, Graft network relies on the authorization sample -  a group of selected trusted supernodes which will “represent” the network and validate the transaction, prevent the double-spending, and sign the instant approval before transaction is “confirmed” by the blockchain (i.e. before it’s added to the block and the block is added to the blockchain).    
 
 The authorization sample consists of 8 supernodes that solved last 8 blocks starting from current height -10. If the same supernode has solved more than one block within the last 8 blocks (starting from height - 10) or the selected node went offline, the list is automatically extended and another supernode from the “bottom” of the list is added to the sample. 
 
