@@ -33,7 +33,6 @@ Supernode Rewards
 Scalability
 
 ### Transaction Types and Payment Flows
-
 Processing Transactions with Graftcoins as a Payment Method
 
 Processing Transactions with Alternative Payment Methods
@@ -46,7 +45,8 @@ Open Loop and Closed Loop Products: Gift Certificates, Loyalty Rewards, and Stor
 
 Merchant (Domain) Tokens
 
-Offline Transactions
+Decentralized Crowdfunded Credit Cards 
+
 ### Security
 Availability
 
@@ -63,6 +63,7 @@ Reputation Score - Illuminate the Darkness
 Volatility
 
 Customer Support, Dispute Resolution, and Payment Insurance
+
 ### Privacy
 ### User Applications
 ### Conclusion
@@ -368,19 +369,31 @@ A coffee chain, for example, can create a merchant token and attach promotion ru
 
 Finally, Graft Domain Tokens would provide a very efficient mechanism for couponing by allowing the merchants to open up the coupon creation and assignment rules within their domain network.
 
-## Offline Transactions
-People familiar with payment card processing know that sometimes transaction can be approved by merchant without getting actual approval from the bank. This is called offline or local approval, or offline authorization, or sometime S&F (‘store and forward) as such offline authorization is forwarded to the server once the network is back online. 
+## Decentralized Crowdfunded Credit Cards  
+Decentralized crowdfunded credit card eco-system consists of credit consumers (cardholders, buyers), credit providers, identity providers, and merchants (sellers). Graft network facilitates the communication and transactions between the parties and enforces the common rules to minimize the risk of fraud. 
 
-Crypto payments, however, assume that network is available 24/7, and there are no downtimes, which is not always true. In some situations, merchants take a risk and approve transactions locally because the risk of single chargeback is lower than the risk of losing multiple customers. Usually, there is a total limit amount for local authorization. After the system reaches this limit (the maximum risk), it stops issuing local approvals until the network is up again. But in case of short downtime, local authorization can go unnoticed to both cashiers and buyers. 
+The **Graft network** connects potential credit consumers with credit providers who offer a credit to consumer. Anyone with Graft wallet (free app) can become a credit consumer. Anyone with Graft wallet and positive balance can become a credit provider. Anyone with Graft point of sale (free app), or third party point of sale integrated with Graft SDK, can become a merchant. The identity provider is implemented as a service broker which runs as a “plugin” on Graft network. The identity provider uses an open API which help maintain the open and decentralized character of the entire eco-system. 
 
-Graft merchant app and single supernode are able to process offline crypto transactions based on the same principle, if they cannot communicate to the authorization sample and get consensus, and the merchant is ready to take a risk. The decision about offline approval will be also based on buyer’s and supernode’s reputation scores.   
- 
+**Credit providers** set their requirements of minimal identity necessary to receive the credit, maximum credit limit, overall maximum credit limit (from multiple providers), credit rate, and minimum payment amount and frequency. Credit consumer can get credit from multiple credit providers as long as the current state of their account fits the provider requirements. 
+Identity providers validate and confirm the identity elements provided by the consumer to remove the burden of identity validation from credit providers and provide some degree of anonymity and privacy to cardholder. Thus, identity providers know the real identity of the consumer and therefore can maintain their long term reputation score independently from the network or credit providers. Credit providers receive a share of transaction fee from each payment that is processes using their credit.
+
+**Credit consumer** is assigned a reputation score which is dynamically calculated based on consumer history and level of identity provided by the cardholder and validated by the identity providers. The initial score, before any identity validated or any history data is collected, is set to 0. The more identity elements are provided and validated (for example, driver license, biometrics, social security number), the higher is initial score, which means the more credit can be given to the cardholder. Positive repayment history elevates the reputation score respectively.
+
+**Merchants** are just recipients of transaction with credit consumer, isolated from the relationship between the cardholders, credit providers, and identity providers, which completely eliminates their risk of fraud. Credit providers assume all potential fraud risk and expenses, which is compensated by their share of transaction processing fees and credit rates fees. However, merchants can participate in the process by offering incentives such as transaction cashback, or even as credit providers.
+
 # Security
 As recent mega data breaches in retail and hospitality industries show, security is very important element of any payment ecosystem. The highest level of security can be achieved if security is part of the system design rather than “add-on” created after implementation is done. This is happened with payment card, which were not designed with security in mind, but it will not supposed to happen with cryptocurrencies, as they were designed to be resilient to most types of attacks. 
 Security of payment system is not just information security but it should include financial security as well. In addition to standard security features inherited from its predecessors, Graft will implement several enhancements from which both buyers and merchants benefit.
 
 ## Availability
-The distributed network of “always on” supernodes ensures overall availability of the network. The client apps communicate with multiple supernodes simultaneously in order to get a concensus necessary for authorization. If one of the sample supernodes is down it is automatically replaced by another one from the authorization sample candidate list which contains virtually endless number of candidates.    
+The distributed network of “always on” supernodes ensures overall availability of the network. The client apps communicate with multiple supernodes simultaneously in order to get a concensus necessary for authorization. If one of the sample supernodes is down it is automatically replaced by another one from the authorization sample candidate list which contains virtually endless number of candidates.
+
+### Offline Transactions
+People familiar with payment card processing know that sometimes transaction can be approved by merchant without getting actual approval from the bank. This is called offline or local approval, or offline authorization, or sometime S&F (‘store and forward) as such offline authorization is forwarded to the server once the network is back online. 
+
+Crypto payments, however, assume that network is available 24/7, and there are no downtimes, which is not always true. In some situations, merchants take a risk and approve transactions locally because the risk of single chargeback is lower than the risk of losing multiple customers. Usually, there is a total limit amount for local authorization. After the system reaches this limit (the maximum risk), it stops issuing local approvals until the network is up again. But in case of short downtime, local authorization can go unnoticed to both cashiers and buyers. 
+
+Graft merchant app and single supernode are able to process offline crypto transactions based on the same principle, if they cannot communicate to the authorization sample and get consensus, and the merchant is ready to take a risk. The decision about offline approval will be also based on buyer’s and supernode’s reputation scores.    
 
 ## Identity Management
 Relying on the wallets to do user management opens up a big security risk as wallets are typically free to implement their own security measures and can be compromised individually.  In order to protect the network and ensure integrity of user identities, Graft will implement a distributed identity provider service (embedded into supernode), available to the wallets as an OpenID Connect oAuth2 API call.
