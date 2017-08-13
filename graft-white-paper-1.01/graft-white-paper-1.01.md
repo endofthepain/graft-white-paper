@@ -30,6 +30,8 @@ Real Time Approvals by Authorization Sample
 
 Authorization Sample Selection
 
+Relay Supernodes
+
 Supernode Rewards
 
 Scalability
@@ -230,7 +232,7 @@ Unlike most crypto payment systems, and similar to traditional payment systems s
 
 On the other hand, the key image does not contain any information about the buyer or buyer’s wallet, which provides absolute security, anonimity, and untraceability. In addition, any traces of communication between the buyer (wallet app), the merchant (point of sale app), and the supernodes (selected relay and sample supernodes) during authorization phase are removed once transaction is settled (written into the blockchain and confirmed by 10 blocks).
 
-## Authorization Sample Selection
+### Authorization Sample Selection
 In order to perform real time (“instant”) authorizations, Graft network relies on the authorization sample -  a group of selected trusted supernodes which will “represent” the network and validate the transaction, prevent the double-spending, and sign the instant approval before transaction is “confirmed” by the blockchain (i.e. before it’s added to the block and the block is added to the blockchain).    
 
 The authorization sample consists of 8 supernodes that solved last 8 blocks starting from current height - 10. If the same supernode has solved more than one block within the last 8 blocks (starting from height - 10) or the selected node went offline, the list is automatically extended and another supernode from the “bottom” of the list is added to the sample. 
@@ -243,15 +245,13 @@ When new transaction request is initiated by the merchant point of sale, it is a
 
 In order to speed up the authorization process, the merchant point of sale app can instruct the authorization sample supernodes to ignore the responses from the rest of the authorization sample as soon as it receives more than 50% of the approved responses from “fastest” supernodes and zero rejected responses; however, this mode will increase the risk of fraud, which can be acceptable in specific cases of micropayments when transaction processing speed requirements are extremely important.
 
-## Relay Supernodes 
+### Relay Supernodes 
 Real time authorizastion sample consists of 8 supernodes. Any supernode from the sample can be also a *relay* supernode - the one that facilitates the merchant transaction by communicating with the merchant POS or/and the buyer’s wallet on one side, and the rest of the authorization sample supernodes on the other side. The relay supernode can be selected randomly by the point of sale or wallet from the current authorization sample linked to the transaction. Merchant or wallet can also select any supernode which is not a part of authoriztion sample. In fact, merchant or wallet can host their own supernodes if they are seeking an extra layer of security and privacy, and potentially earn an income from mining and transaction processing. However, the relay nodes do not get any rewards or fees if they are not included in the authorization sample.
 
-## Supernode Rewards from mining and real time authoriztions
-Each supernode in the authorization sample receives a share of transaction fee for each transaction it signs (approves). Each supernode in the sample receives 1 / n of the transaction fee, where n is the number of supernodes in the authorization sample.
+### Supernode Rewards
+Each supernode in the authorization sample receives a share of transaction fee for each transaction it signs (approves). Each supernode in the sample receives 1 / n of the transaction fee, where n is the number of supernodes in the authorization sample. The fee is paid by the recipient (merchant). 
 
-Each transaction will include the public addresses and the signature of the sample supernodes that approved the transaction for receiving their share of the block reward and transaction fee. The fee is paid by the recipient (merchant). 
-
-The block mining reward is paid to the supernode that solved the new block. The block reward is gradually reduced with each new block using the following formula: (M - A) * 220 * 1012, where A = current circulation, M = total supply in atomic units (264 − 1). The idea behind this is that in the future there will be more transactions which will ensure the sustainable income for supernodes from transaction fees.
+The block mining reward is paid to the supernode that solved the new block. The block reward is gradually reduced with each new block using the following formula: (M - A) * 2<sup>20</sup> * 10<sup>12</sup>, where A = current circulation, M = total supply in atomic units (2<sup>64</sup> − 1). The idea behind this is that in the future there will be more transactions which will ensure the sustainable income for supernodes from transaction fees.
 
 ## Scalability
 Scalability of payment network is the ability to process a large number of transactions simultaneously without degradation of performance. Scalability of the payment network is usually measured in tps (transactions per second). For example, Visa claims its authorization network is capable to process 56,000 tps,[17] while Bitcoin network is restricted to a sustained rate of only 7 tps.[18]
