@@ -251,7 +251,7 @@ Any supernode from the authorization sample can be also a *relay* supernode - th
 ### Supernode Rewards
 Each supernode in the authorization sample receives a share of transaction fee for each transaction it signs (approves). Each supernode in the sample receives 1 / n of the transaction fee, where n is the number of supernodes in the authorization sample. The fee is paid by the recipient (merchant). 
 
-The block mining reward is paid to the supernode that solved the new block. The block reward is gradually reduced with each new block using the following formula: (M - A) * 2<sup>-20</sup> * 10<sup>-12</sup>, where A = current circulation, M = total supply in atomic units (2<sup>64</sup> − 1). The idea behind this is that in the future there will be more transactions which will ensure the sustainable income for supernodes from transaction fees.
+The block mining reward is paid to the supernode that solved the new block. The block reward is gradually reduced with each new block using the following formula: (M - A) * 2<sup>-19</sup> * 10<sup>-12</sup>, where A = current circulation, M = total supply (2<sup>64</sup> − 1) in atomic units (10<sup>-12</sup>). The idea behind this is that in the future there will be more transactions which will ensure the sustainable income for supernodes from transaction fees.
 
 ## Scalability
 Scalability of payment network is the ability to process a large number of transactions simultaneously without degradation of performance. Scalability of the payment network is usually measured in tps (transactions per second). For example, Visa claims its authorization network is capable to process 56,000 tps,[17] while Bitcoin network is restricted to a sustained rate of only 7 tps.[18]
