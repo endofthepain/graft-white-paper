@@ -1,6 +1,7 @@
-Version 1.01 is the most recent official version of the Graft white paper.
+Note: Version 1.02 is the most recent official version of the Graft white paper.
 
-Changes since the last version:
+Version 1.01 changes:
+
 - relay supernode definition
 - authorization sample definition
 - authorization sample selection algorithm
