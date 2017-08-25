@@ -197,9 +197,19 @@ Transaction amount | Transaction Fee Amount | Effective Transaction Fee
 1,000,000 GRF | 0.06 GRF | 0.000006%
 
 ### Free Funds Transfers: Authenticated Transactions 
-Many payment networks such as ACH or PayPal provide free transfers between user accounts which create a huge insentive comparing to cryptocurrencies, whuch charge users unproprotional fees regardless the speed and amount of transaction. This feature is especially important for transactions with small amounts and low priorities, such as funds transfers between family accounts, or remittance of employees' salaries. In order to be able to compete with traditional payment networks, Graft provides limited free transfers between user wallets.
+Many payment networks such as ACH or PayPal provide free transfers between user accounts which create a huge incentive comparing to cryptocurrencies, which charge users unproportional fees regardless the speed and amount of transaction. This feature is perfectly suitable for transactions with low speed requirements, such as funds transfers between family accounts or remittance of employees' salaries. In order to be able to compete with traditional payment networks, Graft provides limited free transfers between user wallets.
 
-Cryptocurrency networks usually cannot "afford" free transactions for three major reasons: lack of insentive for miners, threat of DOS attacks, and block size. Graft resolves the first problem by logical separtation between payment and transfer, so supernodes (miners) receive transaction fees for instant payments which constitute the majority of all transactions, while free transfers are processed on the background with lower priority. The second problem with DOS threat is resolvsed by volontary user identification and authentication. Of course, there are no free lunches, so the users should "pay" by providing their identity to te network to ensure the reasonable use (by limiting the number and frequency of free transfers per user) and prevent the network abuse. The last problem with block size is resolved by a complex of measures: small block interval, inlimited block size, and standard restricted transaction size for particilar transaction types such as free transfer.  
+Cryptocurrency networks usually cannot "afford" free transactions for three major reasons:
+
+* Lack of incentive for miners
+* Threat of DOS attacks 
+* Uncontrolled growth of blockchain
+
+Graft resolves the first problem by logical separation between payment and transfer, so supernodes (miners) receive transaction fees for instant payments which constitute the majority of all transactions, while free transfers are processed on the background with lower priority. 
+
+The second problem with DOS threat is resolved by voluntary user identification and authentication. Of course, there are no free lunches, so the users should "pay" by providing their identity to the network to ensure the reasonable use (by limiting the number and frequency of free transfers per user) and prevent the network abuse. However, using zero knowledge proof authentication technology will allow users to prove their identity without compromising their privacy.
+
+The last problem with uncontrolled block size growth is resolved by a complex of measures: small block interval, unlimited block size, and standard restricted transaction size for particular transaction types such as free transfer. In addition, one of the sides of the free transfer must prove that they contributed to the network by conducting “commercial” payment transaction types in the past.
 
 ### Additional Third Party Service Broker Fees
 When accepting different payment methods such as bitcoins, altcoins, credit/debit cards, or processing merchant payouts in different currencies such as bitcoins, altcoins, or local fiat currency, additional payment broker and/or payout broker fees may be applied. These are not hidden fees as they are published by the brokers at the time of merchant sign-in for the broker service. Those fees are always charged to the merchant at the time of transaction settlement (payout), i.e. there are no any setup, upfront, or periodic fees.
