@@ -13,45 +13,45 @@ Agustus 2017
 ## Daftar Isi
 ### Ikhtisar
 ### Latar Belakang
-Nilai Proses Pembayaran yang Terdesentralisasi
+Kelebihan Alat Pembayaran Terdesentralisasi
 ### Terminologi
 ### Biaya Transaksi
-Untuk Biaya atau Tidak untuk Biaya
+Menarik biaya atau Tidak menarik biaya
 
 Biaya Transaksi Graft
 ### Pemrosesan transaksi
-Masalah Waktu Konfirmasi: Memperkenalkan Real Time Otorisasi
+Masalah Waktu Konfirmasi: Memperkenalkan Otorisasi secara Real Time 
 
 Supernodes
 
 DAPI
 
-Persetujuan Real Time oleh Sampel Otorisasi
+Validasi secara Real Time dengan Sampel Otorisasi
 
 Pemilihan Sampel Otorisasi
 
 Relay Supernodes
 
-Hadiah Supernode
+Reward Supernode
 
 Skalabilitas
 
-Persetujuan Transaksi Offline
+Validasi Transaksi Offline
 
-### Jenis Transaksi dan Arus Pembayaran
-Mengolah Transaksi menggunakan Graftcoin sebagai Metode Pembayaran
+### Tipe Transaksi dan Arus Pembayarannya
+Pemprosesan Transaksi menggunakan Graftcoin sebagai Metode Pembayaran
 
-Mengolah Transaksi dengan Metode Pembayaran Alternatif
+Pemprosesan Transaksi menggunakan Metode Pembayaran Alternatif
 
 Layanan Pialang
 
-Pembayaran Pedagang
+Pembayaran Merchant
 
-Open Loop and Closed Loop Products: Gift Certificates, Loyalty Rewards, and Store Credits
+Produk Open Loop dan Closed Loop: Gift Certificates, Loyalty Rewards, dan Store Credits
 
 Merchant (Domain) Tokens
 
-Kartu Kredit Crowdfunded yang Terdesentralisasi
+Crowdfunded Kartu Kredit Terdesentralisasi
 
 ### Keamanan
 Ketersediaan
@@ -64,11 +64,11 @@ Pemeriksaan Identitas
 
 Otentikasi Dua Langkah dengan Biometrik
 
-Skor Reputasi - Menerangi Kegelapan
+Skor Reputasi - Menjadi Penerang
 
 Volatilitas
 
-Dukungan Pelanggan, Penyelesaian Sengketa, dan Asuransi Pembayaran
+Layanan Pelanggan, Penyelesaian Sengketa, dan Asuransi Pembayaran
 
 ### Pivasi
 ### Aplikasi Pengguna
@@ -76,17 +76,15 @@ Dukungan Pelanggan, Penyelesaian Sengketa, dan Asuransi Pembayaran
 ### Referensi
 
 # Ikhtisar
-Graft adalah gateway pembayaran dan platform pemrosesan terdepan berbasis open-source, blockchain berbasis desentralisasi, dan platform pemrosesan yang dapat digunakan oleh siapapun.
+Graft bersifat global, open-source, berbasis blockchain, platform payment gateway dan pemprosesan transaksi terdesentralisasi yang bisa digunakan oleh semua orang. Setiap penjual dan pembeli dapat menggunakan Graft secara murah dan sepenuhnya terdesentralisasi. Ekosistem Graft terbuka untuk semua orang sehingga siapapun dapat berpartisipasi dalam pemeliharaan blockchain Graft serta pengimplementasian layanan jaringannya.
 
-Setiap pembeli dan pedagang dapat menggunakan Graft dengan cara yang benar-benar terdesentralisasi dan murah. Ekosistem graft terbuka sehingga siapapun dapat berpartisipasi dengan memelihara blockchain graft dan mengimplementasikan layanan jaringan.
-
-Graft menggunakan protokol pemrosesan pembayaran dan aliran yang serupa dengan sistem pembayaran elektronik tradisional seperti kartu kredit, debit, dan kartu prabayar, yang sudah biasa dan dipercaya oleh jutaan pengguna dan pedagang di seluruh dunia. Pendekatan ini memungkinkan penerapan Graft yang lebih mudah dan cepat sebagai platform pembayaran utama, sekaligus menghilangkan kebutuhan perantara terpusat (gateway pembayaran dan prosesor) yang saat ini diminta untuk memfasilitasi transaksi antara pembeli dan pedagang.
+Graft menggunakan protokol pemrosesan pembayaran dan prosesnya mirip dengan sistem pembayaran elektronik tradisional seperti kartu kredit, debit, dan kartu prabayar, yang sudah biasa dan dipercaya oleh jutaan pengguna dan merchant di seluruh dunia. Pendekatan ini memungkinkan pegadopsian Graft secara lebih cepat dan mudah sebagai platform pembayaran utama, sekaligus menghilangkan kebutuhan perantara terpusat (payment gateway dan processors) yang sampai saat ini digunakan untuk memfasilitasi transaksi antara pembeli dan merchant.
 
 # Latar Belakang
-Bitcoin[1] was created as an “online cash” - very secure but relatively slow settlement system which was unable to replace payment cards online or compete with both plastic cards and paper cash in brick-and-mortar stores (Figure 1).
+Bitcoin[1] diciptakan sebagai “online cash” - cukup aman namun dengan sistem settlement yang relatif lebih lama karena masih belum mampu menggantikan peran pembayaran kartu online atau menyaingi kartu kredit/debit dan mata uang kertas pada brick-and-mortar stores (peralihan toko fisik - toko online)(Gambar 1).
 
 ![Bitcoin Transaction Processing without Centralized Intermediary](https://github.com/graft-project/graft-white-paper/blob/master/graft-white-paper-1.01/images/Figure%201.png "Bitcoin Transaction Processing without Centralized Intermediary")
-**Figure 1:** Bitcoin Transaction Processing without Centralized Intermediary
+**Gambar 1:** Pemprosesan Transaksi Bitcoin Tanpa Perantara Terpusat
 
 Even though some existing cryptocurrencies[2] have improved confirmation times, they are still unable to process essential transactions types such as authorization and completion, which makes their adoption by retail, hospitality, and convenience store industries impossible without using intermediaries - payment processors and gateways[3] - who fill the gap (Figure 2). However, the very existence of payment processor, which is typically a centralized commercial organization regulated by government and controlled by shareholders, as an element of crypto payment transaction contradicts the fundamental principles of cryptocurrencies: decentralization, privacy, and independence. 
 
