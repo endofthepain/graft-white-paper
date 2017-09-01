@@ -2,7 +2,7 @@
 ## Jaringan Pemprosesan Kartu Kredit, Debit, dan Pembayaran Crypto Terdesentralisasi
 
 
-Slava Gomzin, Dan Itkis
+Slava Gomzin, dan Itkis
 
 
 Versi 1.02
