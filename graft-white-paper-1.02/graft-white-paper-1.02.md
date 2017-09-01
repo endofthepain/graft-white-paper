@@ -51,24 +51,24 @@ Open Loop and Closed Loop Products: Gift Certificates, Loyalty Rewards, and Stor
 
 Merchant (Domain) Tokens
 
-Decentralized Crowdfunded Credit Cards 
+Kartu Kredit Crowdfunded yang Terdesentralisasi
 
 ### Keamanan
-Availability
+Ketersediaan
 
-Identity Management
+Manajemen Identitas
 
-Identification, Authentication, and Authorization
+Identifikasi, Otentikasi, dan Otorisasi
 
-Identity Proofing
+Pemeriksaan Identitas
 
-Two Factor Authentication with Biometrics
+Otentikasi Dua Langkah dengan Biometrik
 
-Reputation Score - Illuminate the Darkness
+Skor Reputasi - Menerangi Kegelapan
 
-Volatility
+Volatilitas
 
-Customer Support, Dispute Resolution, and Payment Insurance
+Dukungan Pelanggan, Penyelesaian Sengketa, dan Asuransi Pembayaran
 
 ### Pivasi
 ### Aplikasi Pengguna
