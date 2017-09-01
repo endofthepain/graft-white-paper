@@ -494,8 +494,8 @@ In addition to supporting consumer focused transactions (B2C), Graft will suppor
 
 Graft also plays well into the IoT space as some of the IoT devices need to “charge” for the data or services that they are offering.  An example would be a brick-and-mortar merchant summoning a truck based on the inventory levels as determined by backend systems and sensors. 
  
-# Conclusion
-Graft wouldn’t exist without its predecessors. It is based on ideas, principles, and technologies introduced and tested by creators of other cryptocurrencies. Using most recent technologies developed by crypto community along with newly developed solutions for transaction processing and security will allow Graft to compete with traditional payment methods and existing centralized payment processors. 
+# Kesimpulan
+Graft tidak akan ada tanpa pendahulunya.  Hal ini didasarkan pada gagasan, prinsip, dan teknologi yang diperkenalkan dan diuji oleh pencipta mata uang kripto lainnya. Dengan menggunakan teknologi terkini yang dikembangkan oleh komunitas kripto bersamaan dengan solusi pemrosesan dan keamanan transaksi yang baru dikembangkan memungkinkan Graft bersaing dengan metode pembayaran tradisional dan pemroses pembayaran terpusat yang ada.
 
 # Referensi
 1. Bitcoin. https://bitcoin.org/en/. 
