@@ -34,7 +34,7 @@ Relay Supernodes
 
 Hadiah Supernode
 
-Scalability
+Skalabilitas
 
 Persetujuan Transaksi Offline
 
