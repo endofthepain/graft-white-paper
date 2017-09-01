@@ -497,7 +497,7 @@ Graft also plays well into the IoT space as some of the IoT devices need to “c
 # Conclusion
 Graft wouldn’t exist without its predecessors. It is based on ideas, principles, and technologies introduced and tested by creators of other cryptocurrencies. Using most recent technologies developed by crypto community along with newly developed solutions for transaction processing and security will allow Graft to compete with traditional payment methods and existing centralized payment processors. 
 
-# References
+# Referensi
 1. Bitcoin. https://bitcoin.org/en/. 
 2. Dash. https://www.dash.org/.
 3. Bitpay. https://bitpay.com/.
@@ -518,5 +518,4 @@ Graft wouldn’t exist without its predecessors. It is based on ideas, principle
 18. Scalability. Bitcoin Wiki. https://en.bitcoin.it/wiki/Scalability. 
 19. MONERO. Private Digital Currency. https://getmonero.org/.
 20. What are Open Loop and Closed Loop Gift Cards? Shelley Hunter. GiftCards.com. https://www.giftcards.com/gcgf/open-loop-versus-closed-loop-gift-cards. 
-21. CryptoNote. https://cryptonote.org/. 
-
+21. CryptoNote. https://cryptonote.org/.
