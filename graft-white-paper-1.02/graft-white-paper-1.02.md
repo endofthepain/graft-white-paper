@@ -5,21 +5,21 @@
 Slava Gomzin, Dan Itkis
 
 
-Version 1.02
+Versi 1.02
 
-August 2017
+Agustus 2017
 
 
-## Table of Contents
-### Abstract
-### Background
-The Value of Decentralized Payment Processing
-### Terminology
-### Transaction Fees
-To Fee or Not to Fee
+## Daftar Isi
+### Abstrak
+### Latar Belakang
+Nilai Proses Pembayaran yang Terdesentralisasi
+### Terminologi
+### Biaya Transaksi
+Untuk Biaya atau Tidak untuk Biaya
 
-Graft Transaction Fees
-### Transaction Processing 
+Biaya Transaksi Graft
+### Pemrosesan transaksi
 Confirmation Time Problem: Introducing Real Time Authorizations
 
 Supernodes
