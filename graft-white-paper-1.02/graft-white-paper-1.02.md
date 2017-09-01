@@ -1,5 +1,5 @@
 # Graft
-## Desentralisasi, Kredit Real-time, Debit, dan Jaringan Pengolahan Pembayaran Crypto
+## Desentralisasi, Kredit Real-time, Debit, dan Jaringan Pengolahan Pembayaran Kripto
 
 
 Slava Gomzin, Dan Itkis
@@ -38,7 +38,7 @@ Scalability
 
 Offline Transaction Approvals
 
-### Transaction Types and Payment Flows
+### Jenis Transaksi dan Arus Pembayaran
 Processing Transactions with Graftcoins as a Payment Method
 
 Processing Transactions with Alternative Payment Methods
@@ -53,7 +53,7 @@ Merchant (Domain) Tokens
 
 Decentralized Crowdfunded Credit Cards 
 
-### Security
+### Keamanan
 Availability
 
 Identity Management
@@ -70,18 +70,18 @@ Volatility
 
 Customer Support, Dispute Resolution, and Payment Insurance
 
-### Privacy
-### User Applications
-### Conclusion
-### References
+### Pivasi
+### Aplikasi Pengguna
+### Kesimpulan
+### Referensi
 
-# Abstract
+# Abstrak
 Graft is a global, open-sourced, blockchain-based, decentralized payment gateway and processing platform that anyone can use.
 Any buyer and merchant can use Graft in a completely decentralized and inexpensive way. Graft ecosystem is open so anyone can participate by maintaining Graft blockchain and implementing network services.
 
 Graft employs payment processing protocols and flows similar to traditional electronic payment systems such as credit, debit, and prepaid cards, which are already familiar to and trusted by millions of users and merchants around the world. This approach enables easier and faster adoption of Graft as a mainstream payment platform, while eliminating the need in centralized intermediaries (payment gateways and processors) currently required to facilitate transactions between buyers and merchants.
 
-# Background
+# Latar Belakang
 Bitcoin[1] was created as an “online cash” - very secure but relatively slow settlement system which was unable to replace payment cards online or compete with both plastic cards and paper cash in brick-and-mortar stores (Figure 1).
 
 ![Bitcoin Transaction Processing without Centralized Intermediary](https://github.com/graft-project/graft-white-paper/blob/master/graft-white-paper-1.01/images/Figure%201.png "Bitcoin Transaction Processing without Centralized Intermediary")
@@ -121,7 +121,7 @@ However, there may be additional value. In some cases, merchant might want to kn
 
 Since Graft is both decentralized payment processor and cryptocurrency, it is able to facilitate the full payment cycle without other cryptocurrencies or assets involved. However, in addition to decentralization and right for privacy, there is a freedom of choice which is another important fundamental liberal principle. Moreover, there might be a commercial need for diversity of cryptocurrencies for both buyers and merchants. Therefore, Graft will support Bitcoin and several major cryptocurrencies as additional choice for buyers and acceptable method of payoff for merchants. This feature will eliminate the need for merchant to integrate with multiple (centralized) payment software providers, and for user to sign up for centralized services and learn and maintain multiple wallet apps. It is important to note that merchants will have to accommodate higher risks and additional expenses associated with acceptance of alternative cryptocurrencies due to their slower confirmation times and higher transaction fees. 
 
-# Terminology
+# Terminologi
 ### Graft 
 1. **G**lobal **R**eal-time **A**uthorizations and **F**und **T**ransfers - decentralized global open platform for processing  real-time authorizations and settlements of merchant payments and fund transfers using untraceable blockchain, decentralized API, and open community of service brokers that support variety of payment and payout methods including cryptocurrencies and traditional credit cards and bank transfers. 
 
