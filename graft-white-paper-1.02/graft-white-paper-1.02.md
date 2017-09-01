@@ -20,23 +20,23 @@ Untuk Biaya atau Tidak untuk Biaya
 
 Biaya Transaksi Graft
 ### Pemrosesan transaksi
-Confirmation Time Problem: Introducing Real Time Authorizations
+Masalah Waktu Konfirmasi: Memperkenalkan Real Time Otorisasi
 
 Supernodes
 
 DAPI
 
-Real Time Approvals by Authorization Sample
+Persetujuan Real Time oleh Sampel Otorisasi
 
-Authorization Sample Selection
+Pemilihan Sampel Otorisasi
 
 Relay Supernodes
 
-Supernode Rewards
+Hadiah Supernode
 
 Scalability
 
-Offline Transaction Approvals
+Persetujuan Transaksi Offline
 
 ### Jenis Transaksi dan Arus Pembayaran
 Processing Transactions with Graftcoins as a Payment Method
