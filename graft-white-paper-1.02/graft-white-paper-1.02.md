@@ -11,7 +11,7 @@ Agustus 2017
 
 
 ## Daftar Isi
-### Abstrak
+### Ikhtisar
 ### Latar Belakang
 Nilai Proses Pembayaran yang Terdesentralisasi
 ### Terminologi
@@ -75,11 +75,12 @@ Dukungan Pelanggan, Penyelesaian Sengketa, dan Asuransi Pembayaran
 ### Kesimpulan
 ### Referensi
 
-# Abstrak
-Graft is a global, open-sourced, blockchain-based, decentralized payment gateway and processing platform that anyone can use.
-Any buyer and merchant can use Graft in a completely decentralized and inexpensive way. Graft ecosystem is open so anyone can participate by maintaining Graft blockchain and implementing network services.
+# Ikhtisar
+Graft adalah gateway pembayaran dan platform pemrosesan terdepan berbasis open-source, blockchain berbasis desentralisasi, dan platform pemrosesan yang dapat digunakan oleh siapapun.
 
-Graft employs payment processing protocols and flows similar to traditional electronic payment systems such as credit, debit, and prepaid cards, which are already familiar to and trusted by millions of users and merchants around the world. This approach enables easier and faster adoption of Graft as a mainstream payment platform, while eliminating the need in centralized intermediaries (payment gateways and processors) currently required to facilitate transactions between buyers and merchants.
+Setiap pembeli dan pedagang dapat menggunakan Graft dengan cara yang benar-benar terdesentralisasi dan murah. Ekosistem graft terbuka sehingga siapapun dapat berpartisipasi dengan memelihara blockchain graft dan mengimplementasikan layanan jaringan.
+
+Graft menggunakan protokol pemrosesan pembayaran dan aliran yang serupa dengan sistem pembayaran elektronik tradisional seperti kartu kredit, debit, dan kartu prabayar, yang sudah biasa dan dipercaya oleh jutaan pengguna dan pedagang di seluruh dunia. Pendekatan ini memungkinkan penerapan Graft yang lebih mudah dan cepat sebagai platform pembayaran utama, sekaligus menghilangkan kebutuhan perantara terpusat (gateway pembayaran dan prosesor) yang saat ini diminta untuk memfasilitasi transaksi antara pembeli dan pedagang.
 
 # Latar Belakang
 Bitcoin[1] was created as an “online cash” - very secure but relatively slow settlement system which was unable to replace payment cards online or compete with both plastic cards and paper cash in brick-and-mortar stores (Figure 1).
