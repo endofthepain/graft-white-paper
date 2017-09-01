@@ -39,13 +39,13 @@ Scalability
 Persetujuan Transaksi Offline
 
 ### Jenis Transaksi dan Arus Pembayaran
-Processing Transactions with Graftcoins as a Payment Method
+Mengolah Transaksi menggunakan Graftcoin sebagai Metode Pembayaran
 
-Processing Transactions with Alternative Payment Methods
+Mengolah Transaksi dengan Metode Pembayaran Alternatif
 
-Service Brokers
+Layanan Pialang
 
-Merchant Payouts
+Pembayaran Pedagang
 
 Open Loop and Closed Loop Products: Gift Certificates, Loyalty Rewards, and Store Credits
 
