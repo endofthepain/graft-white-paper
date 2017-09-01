@@ -1,5 +1,5 @@
 # Graft
-## Desentralisasi, Kredit Real-time, Debit, dan Jaringan Pengolahan Pembayaran Kripto
+## Jaringan Pemprosesan Kartu Kredit, Debit, dan Pembayaran Crypto Terdesentralisasi
 
 
 Slava Gomzin, Dan Itkis
