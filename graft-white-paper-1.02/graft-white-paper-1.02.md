@@ -86,28 +86,27 @@ Bitcoin[1] diciptakan sebagai “online cash” - cukup aman namun dengan sistem
 ![Bitcoin Transaction Processing without Centralized Intermediary](https://github.com/graft-project/graft-white-paper/blob/master/graft-white-paper-1.01/images/Figure%201.png "Bitcoin Transaction Processing without Centralized Intermediary")
 **Gambar 1:** Pemprosesan Transaksi Bitcoin Tanpa Perantara Terpusat
 
-Even though some existing cryptocurrencies[2] have improved confirmation times, they are still unable to process essential transactions types such as authorization and completion, which makes their adoption by retail, hospitality, and convenience store industries impossible without using intermediaries - payment processors and gateways[3] - who fill the gap (Figure 2). However, the very existence of payment processor, which is typically a centralized commercial organization regulated by government and controlled by shareholders, as an element of crypto payment transaction contradicts the fundamental principles of cryptocurrencies: decentralization, privacy, and independence. 
+Meski pada beberapa mata uang crypto yang telah ada[2] waktu konfirmasi telah meningkat, namun masih belum mampu untuk memproses bagian penting transaksi seperti halnya otorisasi dan penyelesaian akhir transaksinya. Hal tersebut membuat adopsi oleh retail, perhotelah, maupun pertokoan tidak mungkin dilakukan tanpa menggunakan perantara - payment processor - gateway[3] - yang pada akhirnya mengisi kesenjangan tersebut (Gambar 2). Meski demikian, keberadaan payment processor umumnya adalah lembaga komersil terpusat yang diatur oleh pemerintah dan dikendalikan para pemilik saham, cukup kontradiktif dengan prinsip fundamental mata uang kripto dalam elemen pembayaran transaksinya: terdesentralisasi, privasi, dan independen.   
 
 ![alt text](https://github.com/graft-project/graft-white-paper/blob/master/graft-white-paper-1.01/images/Figure%202.png "Processing Bitcoin Transaction by Centralized Intermediary")
-**Figure 2:** Processing Bitcoin Transaction by Centralized Intermediary
+**Figure 2:** Pemprosesan Transaksi Bitcoin dengan Perantara Terpusat
 
-Most merchants are unable to accept cryptocurrencies without third-party payment processor due to uniqueness of the way blockchain networks process transactions, which is conceptually different from traditional electronic payment methods such as payment cards or Paypal. Although the overall concept of plastic card payments may have been outdated, there are technologies developed around them that accumulated enormous amount of merchant experience and user trust which cannot be abandoned overnight. Those technologies include real-time authorization protocols and smart cards.
-There are several major differences between the ways traditional and cryptocurrency payment systems handle transactions, which in most cases make cryptocurrencies less attractive for merchants and/or consumers. Here is the list of technical limitations and business flaws of the existing cryptocurrencies comparing to traditional electronic payments: 
+Kebanyakan merchant belum dapat menerima pembayaran dengan mata uang Crypto tanpa menggunakan perantara ketiga dari payment processor karena keunikan jaringan blockchain dalam memproses transaksi. Dan proses itu secara konseptual cukup berbeda dengan metode pembayaran elektronik tradisional seperti kartu pembayaran atau Paypal. Meski secara keseluruhan konsep pembayaran dengan kartu mungkin telah usang, namun ada pengembangan teknologi disekitarnya agar dapat mengakomodir banyak pengalaman-pengalaman dari para merchant dan keperacayan pengguna yang tidak mungkin ditinggal semalaman. Teknologi tersebut termasuk protokol otorisasi real-time dan juga smart cards. Ada perbedaan besar antara cara tradisional dan sistem pembayaran mata uang crypto dalam menangani transaksi, yang dalam beberapa hal mata uang crypto menjadi kurang menarik digunakan untuk merchant ataupun konsumen. Berikut ini adalah beberapa keterbatasan teknis dan kekurangannya secara bisnis pada mata uang-mata uang crypto yang telah ada dibandingkan dengan pembayaran elektronik tradisional:
 
-* Lack of Essential Transaction Types
-* Unsuitable Payment Flows
-* Long Confirmation Times
-* Unbalanced and Unpredictable Transaction Fees
-* Inability to Process Micropayments and Repeating Charges (Subscriptions)
-* Lack of Offline Transactions support
-* Low Scalability
-* Volatility
-* Incomplete Security
-* Lack of Privacy Due to Traceability of Blockchain 
-* Lack of Trust between Buyer and Merchant
-* Questionable Utility
-* Poor Usability of End-User Interfaces
-* Lack of Customer Support 
+* Berkurangnya bagian penting transaksi
+* Arus pembayaran tidak sesuai
+* Waktu Konfirmasi Lama
+* Biaya transaksi tidak Seimbang dan tidak Terprediksi
+* Tidak Mampu Memproses Micropayment dan Repeating Charges (Langganan)
+* Kurangnya dukungan Transaksi Offline
+* Skalabilitas Rendah
+* Volatilitas
+* Keamanan kurang lengkap
+* Kurangnya Privasi Karena Blockchain Terlacak
+* Kepercayaan antara Pembeli dan Merchant Berkurang
+* Utilitasnya Dipertanyakan
+* Kemudahan Penggunaan dari Interface End-User Kurang
+* Kurangnya Layanan Pelanggan
 
 By addressing all those issues, Graft elevates crypto payment processing to a new level, and makes possible their wide acceptance by mainstream merchants and consumers for the first time without violating the fundamental principles of cryptocurrencies. Let’s review each of those issues with greater detail and see how Graft addresses them.
 
