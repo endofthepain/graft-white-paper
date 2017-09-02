@@ -420,18 +420,18 @@ Identity providers validate and confirm the identity elements provided by the co
 As recent mega data breaches in retail and hospitality industries show, security is very important element of any payment ecosystem. The highest level of security can be achieved if security is part of the system design rather than “add-on” created after implementation is done. This is happened with payment card, which were not designed with security in mind, but it will not supposed to happen with cryptocurrencies, as they were designed to be resilient to most types of attacks. 
 Security of payment system is not just information security but it should include financial security as well. In addition to standard security features inherited from its predecessors, Graft will implement several enhancements from which both buyers and merchants benefit.
 
-## Availability
+## Ketersediaan
 The distributed network of “always on” supernodes ensures overall availability of the network. The client apps communicate with multiple supernodes simultaneously in order to get a concensus necessary for authorization. If one of the sample supernodes is down it is automatically replaced by another one from the authorization sample candidate list which contains virtually endless number of candidates.
 
-## Identity Management
+## Manajemen Identitas
 Relying on the wallets to do user management opens up a big security risk as wallets are typically free to implement their own security measures and can be compromised individually.  In order to protect the network and ensure integrity of user identities, Graft will implement a distributed identity provider service (embedded into supernode), available to the wallets as an OpenID Connect oAuth2 API call.
 
 As such, regardless of wallet implementation, user verification and authentication will be carried out by the Graft network, which will prevent compromised user identities, spoofing, replays, and man-in-the-middle attacks.
 
-## Identification, Authentication, and Authorization
+## Identifikasi, Otentikasi, dan Otorisasi
 In the existing cryptocurrencies authentication / authorization has been the purview of the user application such as wallet, and has largely been an afterthought.  In context of financial transactions between buyers and sellers, however, where some degree of trust has to be established between the parties, regulations and compliances have to be dealt with, and a recourse has to be provided, a good system for authentication /authorization becomes critical.
 
-## Identity Proofing
+## Pemeriksaan Identitas
 Identity proofing is a challenging topic as it carries both regulatory and privacy considerations.  Also effective identity proofing is not trivial.
 
 To understand the need for identity proofing consider a seller that might request strong level of identity proofing to make sure the buyer is eligible to purchase prescribed medications, and superior level of identity proofing to purchase arms (as defined by NIST Special Publication 800-63A in the US ). Conversely, buyers purchasing goods on an after-market, might want to protect themselves from buying stolen goods by requesting that the seller provide higher level of identity proofing.  
@@ -440,7 +440,7 @@ In order to limit user’s exposure when sharing their complete identity informa
 
 Graft will allow optional multi-user control, when several users have access to the same merchant account, and multi-user custodianship, when two or more users are required in order to unlock some functions like transfer funds out of the account.
 
-## Two Factor Authentication with Biometrics
+## Otentikasi Dua Langkah dengan Biometrik
 Graft will implement best-practices, advanced authentication to go along with the user management service, which will include risk / threat analytics based on login/usage pattern as well as device and network characteristics, sophisticated multi-factor based authentication which will include biometrics, FIDO and other passwordless factors and techniques to identify the user. 
 
 The user ID will be given special attention to avoid “lost key” problem, but also to ensure ability to reliably ID the user quickly and in variety of situation.  To that end UserID will be comprised of multiple elements (keys) - some tied to devices and hardware tokens, and some to user biometrics - that will jointly provide a base for identifying a user via flexible set of attributes.  For example it will be possible to identify the user by a choice of 2 factors out of available ID elements (face, palm, iris, hardware token, device, etc). The unused factors will be used as a pool of factors to verify user’s identity.
@@ -451,22 +451,22 @@ The ultimate goal is to make user identification and authentication work quickly
 
 **Figure 3:** Mobile Multi-Factor Biometric Authenticator is a Part of Graft Existing Technologies Portfolio
 
-## Reputation Score - Illuminate the Darkness
+## Skor Reputasi - Menjadi Penerang
 Graft take a risk based approach to transaction processing. Each participant in the network is assigned a reputation score which is dynamically updated according to new data captured by the system. The buyers, merchants, and supernodes owners can optionally link their partial identity to their account in order to disclose and improve their reputation score. Such a link will will not compromise the untraceability of transactions.
 
 The reputation score system helps participants in the ecosystem make informed decisions without compromising their security and privacy. For example, a merchant can take into account the buyer’s reputation score when making decision regarding authorization limit before instant authorization. The buyer can review the merchant’s reputation score before making payment for the goods that cannot be delivered immediately. Both buyers and merchants can check the reputation score of the network supernode they communicate with. 
 
 The supernodes are in charge of monitoring, calculating, updating, and validating the reputation scores for buyers, merchants, and other supernodes. The scores are calculated using special predictive analytics algorithms which produces easily understandable results on 0-100 scale, which cannot be used to disclose any information about the number, amount, time, or nature of transactions.
 
-## Volatility
+## Volatilitas
 Most merchants want to get paid in dollars (or their local currency). Merchants use fiat currency, not bitcoins or other cryptocurrencies, to replenish stock and pay their bills and employees’ salaries. Also, they may use fiat to pay refunds in case of return. They cannot afford high volatility, especially small merchants. Graft resolved the volatility problem by instant, real time transaction settlement, which minimizes possible loss of value due to volatility. The merchant’s payment app can automatically adjust the transaction amount to the current exchange rate, and redeem it to local currency through online exchange right after transaction completion. 
 
-## Customer Support, Dispute Resolution, and Payment Insurance
+## Layanan Pelanggan, Penyelesaian Sengketa, dan Asuransi Pembayaran
 One of the main showstoppers of cryptocurrency adoption by mainstream consumers and merchants is the lack of the authority and the business owners who could help answer questions and resolve technical and business issues. Also, it is impossible to “fix” a wrong cryptocurrency transaction in case of human error, fraudulent activity, or technical glitch. Obviously, all these issues are caused and justified by decentralized, anonymous,  and independent nature of crypto payments. However, the good reasons do not help resolve the problems. The open source community resolved those problems by introducing an optional customer support for free open source products. Linux OS supported by Redhat and MySQL database supported by Oracle are just two successful examples of providing commercial-level support to free open source products.
 
 In order to facilitate adoption of Graft payment, Graft Foundation provides free customer support and dispute resolution services to Graft account holders. Merchants with high transaction volume can get 24/7 real time support and dispute resolution assistance. Graft Foundation or/and service brokers may insure payments up to equivalent of USD $100 and compensate customers or merchants for their lost of funds due to fraud or technical issues.   
  
-# Privacy
+# Privasi
 Oftentimes, there is a wrong perception of the need for privacy. In reality, majority of legitimate buyers don’t mind to disclose their identity to the merchant, especially, if they benefit from such disclosure, or such disclosure is necessary to process transaction. In the same way, the buyers want to make sure that the merchant they send payment to is the right person or organization and not just their impersonator. What neither merchant nor buyer want is anyone else’s ability to recognize their identities and see all the details of their transactions by scanning the publicly accessible blockchain. 
 
 Privacy is a delicate subject for crypto currencies and the payment industry in general. Privacy demands range from complete anonymity to complete transparency, as decided by both the seller and the buyer. The seller for example may have regulatory compliance requirements to collect and verify certain identity data, such as age for liquor or cigarette purchases, or zip code for online merchant’s tax calculations.  The buyer on the other hand may or may not agree to disclose all or some of the attributes of their identity and should be in a position to do so. If the seller and the buyer can agree on the identity attributes to be shared, the transaction can proceed. Furthermore, there’s a requirement to establish identity attributes authenticity by the merchant in lots of cases.
@@ -476,7 +476,7 @@ Graft implements digital identity profile which is attached to Graft wallet, wit
 
 Graft implements CryptoNote[21] as an underlying transaction recording protocol which provides a high degree of privacy comparing to Bitcoin and other cryptocurrencies by hiding information about sender and receiver.
  
-# User Applications
+# Aplikasi Pengguna
 All Graft user apps are “light” clients that do not store the blockchain or process any transactions. The user apps use remote API calls to communicate with “always on” Graft nodes which mine new transactions blocks and process transaction requests in real time. 
 
 Users who require even higher level of control over privacy, anonymity, and availability (for example, large merchants or secret organizations) may run their own supernode or even multiple supernodes which would exclusively and privately communicate with their client apps, relay messages and transactions to other supernodes, issue offline authorizations, and mine Grafts required for running store credit, gift, and loyalty programs. Another solution is connecting to supernodes via remote VPN or/and TOR network. For this purpose, supernodes will be accessible through TOR.
