@@ -302,14 +302,14 @@ Sale is Authorize/Complete processed sequentially and automatically by the netwo
 ### Transfer
 Money transfer between Graft accounts. The same as Sale but initiated by the Sender, without Receiver consent. Can be used for peer-to-peer payments, exchanges, and transfers between different accounts.   
 
-### Cancel
-Cancels Authorize, releases the authorized funds (removes the account lock).
+### Membatalkan
+Membatalkan Otorisasi, melepaskan dana yang disahkan (menghapus kunci akun).
 
-### Issue
-Activates Graft prepaid card, gift certificate, loyalty points, store credit, or discount coupon. 
+### Menerbitkan
+Mengaktifkan kartu prabayar Graft, sertifikat hadiah, poin loyalitas, kredit toko, atau kupon diskon.
 
-### Redeem
-Payment using prepaid card, gift certificate, loyalty points, store credit, or discount coupon previously issued by Graft. 
+### Menebus
+Pembayaran menggunakan kartu prabayar, sertifikat hadiah, poin loyalitas, kredit toko, atau kupon diskon yang dikeluarkan oleh Graft.
 
 ### Exchange
 Exchange funds between graftcoins and other major cryptocurrencies and local fiat currencies using the best offer from supernodes.
