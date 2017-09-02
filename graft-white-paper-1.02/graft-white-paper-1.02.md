@@ -125,16 +125,16 @@ Since Graft is both decentralized payment processor and cryptocurrency, it is ab
 
 2. A plant that has a twig or bud from another plant attached to it so they are joined and grow together.[4] Grafting is an advanced technique that botanists, farmers, gardeners, and hobbyists use to add living tissue from one plant to another. Why would anyone go to all this trouble of attaching two bits of plants together? Well, it turns out that this technique has a lot of benefits. Growers can choose different parts of plants that have particular attributes, and attach them to other plants. Let's say a certain tree has really strong roots, but its fruit isn't so great. This tree would make great rootstock, or a plant selected for its roots. It can be combined with another tree that doesn't have good roots, but produces wonderful fruit. Plants that are selected for their stems, flowers, or fruit are called the scion. A desirable scion can be grafted onto a strong rootstock to create a truly great tree. This is pretty common practice in the gardening industry. It allows for plants to grow in many new areas, and gives us access to more products.[5]
 
-### Supernode
+### Supernodes
 Independant always-on server running the combined implementation of Graft blockchain node and Graft DAPI node, maintaining the blockchain via block mining, processing of real-time authorization and settlement DAPI calls between buyers and merchants, and hosting additional services such as instant cryptocurrency exchange, credit/debit card acceptance, and merchant payouts in local currency. Supernode is mainitaining teh network using combined PoW/PoS algorithm.
 
 ### Authorization Sample
 Selected group of trusted supernodes that approve payments in real time and guarantee that the buyer cannot spend the same money more than once before the transaction is written into the blockchain.
 
-### Relay Supernode
+### Relay Supernodes
 The supernode that facilitates the merchant transaction by communicating with the merchant POS or/and the buyer’s wallet on one side, and the rest of the authorization sample supernodes on the other side.
 
-### Service Broker
+### Layanan Pialang
 Graft protocol extension hosted on supernode or a group of supernodes and owned by the supernode operator. Service Brokers implement special additional features that cannot be automatically executed by fully decentralized network or/and requires special regulation framework such as PCI DSS[6] or NIST 800-63-3.[7] Examples of service brokers are credit card payment acceptance broker and bank payout transfer broker.   
 
 ### Domain
@@ -174,17 +174,17 @@ Another problem currently experienced by Bitcoin is its inability to handle micr
 ## Graft Transaction Fees
 Graft reintroduces convenient fee structure with no fees for the payer so all fees are paid by the receiver (merchant), just like everyone used to do with traditional electronic methods of payment. Graft makes micropayments accessible to everyone by setting very low (comparing to credit cards[11] and online payment processors,[12] and other cryptocurrencies[13]) fees, but without fixed fee component (Table 1). All fees are paid by the payees.  
  
-**Table 1:** Graft Network Transaction Fees
+**Table 1:** Biaya Transaksi Jaringan Graft
 
-Micropayments (less than 10 GRF) | Regular Payments (more than 10 GRF)
+Pembayaran Mikro (kurang dari 10 GRF) | Pembayaran Regular (lebih dari 10 GRF)
 --- | ---
 0.1%  | 1% of log10 (significantly less than 0.1% as transaction amount grows)               
      
 The logarithmic fee schedule allows creating incentive for processing less transactions with small amounts (i.e. combining multiple transactions together whenever possible) while keeping low transaction fees for large transaction amounts (Table 2).
 
-**Table 2:** Examples of Graft Network Transaction Fees
+**Table 2:** Contoh Biaya Transaksi Jaringan Graft
 
-Transaction amount | Transaction Fee Amount | Effective Transaction Fee
+Jumlah Transaksi | Jumlah Biaya Transaksi | Biaya Transaksi Efektif
 --- | --- | ---
 0.01 GRF | 0.00001 GRF | 0.1%
 1 GRF | 0.001 GRF | 0.1%
