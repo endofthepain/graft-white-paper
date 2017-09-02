@@ -108,9 +108,9 @@ Kebanyakan merchant belum dapat menerima pembayaran dengan mata uang Crypto tanp
 * Kemudahan Penggunaan dari Interface End-User Kurang
 * Kurangnya Layanan Pelanggan
 
-By addressing all those issues, Graft elevates crypto payment processing to a new level, and makes possible their wide acceptance by mainstream merchants and consumers for the first time without violating the fundamental principles of cryptocurrencies. Let’s review each of those issues with greater detail and see how Graft addresses them.
+Dengan mengatasi semua masalah tersebut, Graft meningkatkan pemrosesan pembayaran kripto ke tingkat yang baru, dan memungkinkan penerimaan luas oleh mereka pedagang dan konsumen untuk pertama kalinya tanpa melanggar prinsip dasar kripto. Mari kita tinjau masing-masing masalah tersebut dengan lebih detail dan lihat bagaimana Graft membahasnya.
 
-## The Value of Decentralized Payment Processing
+## Kelebihan Alat Pembayaran Terdesentralisasi
 Why would a buyer want to start using cryptocurrency instead of (or in addition to) plastic cards or PayPal or Apple Pay, and why would a merchant want to accept cryptocurrency in addition to (or instead of) existing payment methods? Obviously, if we don’t find the right answers to those simple questions, there is no point to create this document.
 
 While the answer to the first part of this question may consists of several elements as there might be multiple reasons (and combinations of them) to individuals to keep their money in a form of cryptocurrency, the answer to the second part of this question is relatively simple. Merchants always want to extend their customer base to increase their revenues, and if they identify a significant group of potential customers who prefer, for any reason, to use cryptocurrency, they will start accepting cryptocurrency. And Graft provides a unique opportunity for merchants to accept crypto payments from their buyers without any middlemen and with near zero fees. 
